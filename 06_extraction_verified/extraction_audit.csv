@@ -1,0 +1,1 @@
+audit_id,source_id,file_id,extraction_batch,extractor,extraction_date,pages_checked,tables_checked,figures_checked,appendix_checked,supplement_checked,ocr_required,ocr_status,high_impact_fields_verified,unresolved_fields,confidence,verifier,verification_date

@@ -1,0 +1,3 @@
+source_id,study_id,site_id,study_name,study_objective,target_taxa,survey_design,total_camera_count_reported,total_station_count_reported,total_camera_days_reported,total_area_reported,area_unit_original,site_name_original,province,prefecture,county,protected_area_name,latitude,longitude,coordinate_precision,elevation_min_m,elevation_max_m,habitat_type_original,survey_area_km2,protection_status,extraction_page
+# SAMPLE — delete before real use,,,,,,,,,,,,,,,,,,,,,,,,,,
+SRC000142,STU000142,SITE000142,长青国家级自然保护区兽类调查,物种编目与活动节律,mammals,grid,60,60,5400,280,km2,长青国家级自然保护区,陕西,汉中市,洋县,长青国家级自然保护区,33.65,107.55,centroid,1400,2600,针阔混交林,280,national nature reserve,"Table 1, Fig. 2"
