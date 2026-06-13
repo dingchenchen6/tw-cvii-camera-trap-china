@@ -56,6 +56,7 @@ window.TWCVII_CONTENT = {
         sections: [
           { title: "检索策略", text: "中文和英文关键词必须多轮组合，覆盖红外相机、自动相机、相机陷阱、物种编目、相对多度指数、相机工作日、保护区、国家公园、人类干扰和类群关键词。" },
           { title: "附录优先", text: "红外相机文章的物种名录、独立记录、RAI、相机工作日和地点信息常在附录或补充 Excel 中，抽取前必须登记并检查所有附件。" },
+          { title: "跨表必保字段", text: "经纬度（WGS84+精度码）、文献溯源信息（标题/作者/年/DOI/语言/检索批次）、精确时间（起止日期/相机工作日/时间戳/活动节律）属跨表高优先字段，即便文献只给汇总值也要尽量还原或显式标注精度，缺失必须用缺失码记录。" },
           { title: "审计链", text: "每个最终字段都保留 source_id、PDF/CAJ/附录文件、页码或表号、抽取批次、抽取工具、核验人和数据库版本。" }
         ],
         qa: ["检索完整性", "Zotero 入库", "全文和附录", "结构化抽取", "清洗标准化", "分析前冻结"],
@@ -108,9 +109,9 @@ window.TWCVII_CONTENT = {
           { title: "监测优先级", metric: "Gap ranking", text: "识别 silent range、monitoring gap 和红色名录不一致物种。" }
         ],
         sections: [
-          { title: "占域和探测校正", text: "在数据允许时使用占域或层级模型处理未探测问题；数据不足时使用透明的调查充分性阈值和敏感性分析。" },
-          { title: "保护区比较", text: "结合保护地边界、土地利用、人类足迹、海拔和气候协变量，评估保护区是否维持更高威胁加权和功能完整性。" },
-          { title: "论文连接", text: "每篇论文冻结 database_version、analysis_script_version、figure_list、claim_table 和 references snapshot，实现声明-证据审计。" }
+          { title: "调查充分性量化阈值", text: "区分 silent range 与 monitoring gap 的临时最低标准：中型食肉动物 ≥1000 相机日且 ≥15 位点、大型食肉动物 ≥5000 相机日且 ≥30 位点跨 12 个月、中型有蹄类与地栖鸟类 ≥600–800 相机日且 ≥10–12 位点；阈值基于累计探测概率曲线并做敏感性分析。" },
+          { title: "红色名录权重与 DD 物种", text: "主权重序列采用几何级数 LC=1、NT=2、VU=4、EN=8、CR=16；DD（数据缺乏）物种不进入主分母，而作为独立的知识赤字覆盖指数分析层。" },
+          { title: "气候位移过滤分类器", text: "用 1950s–2020s 气候常态判断空间单元气候包络是否移出物种历史热生态位；若 silent range 落在气候已显著漂移的单元，标记为 climate_explainable，与人为去动物化区分。" }
         ],
         views: ["view_species_site_evidence", "view_site_intactness_inputs", "view_pa_effectiveness_inputs", "view_redlist_mismatch_inputs"],
         sources: ["TW-CVII proposal", "Occupancy modelling", "Protected-area matching", "Red List sensitivity"]
@@ -174,6 +175,7 @@ window.TWCVII_CONTENT = {
         sections: [
           { title: "Search strategy", text: "Chinese and English keywords must cover camera traps, species inventories, relative abundance indices, camera-days, protected areas, national parks, human disturbance, and target taxa." },
           { title: "Appendix-first extraction", text: "Species lists, independent events, RAI, camera-days, and locality details are often in appendices or supplementary Excel files, so all attachments must be registered and inspected." },
+          { title: "Cross-table must-keep fields", text: "Coordinates (WGS84 with precision code), citation provenance (title/authors/year/DOI/language/search batch), and precise time (start/end dates, camera-days, timestamps, activity patterns) are cross-table high-priority fields; even when a paper reports only summary values they must be recovered or explicitly precision-flagged, and any gap recorded with a missing code." },
           { title: "Audit chain", text: "Every final field keeps source_id, PDF/CAJ/appendix file, page or table number, extraction batch, extraction tool, verifier, and database version." }
         ],
         qa: ["Search completeness", "Zotero integrity", "Full text and appendix", "Structured extraction", "Standardization", "Analysis freeze"],
@@ -226,9 +228,9 @@ window.TWCVII_CONTENT = {
           { title: "Monitoring priorities", metric: "Gap ranking", text: "Identify silent ranges, monitoring gaps, and Red List mismatch species." }
         ],
         sections: [
-          { title: "Occupancy and detection correction", text: "When data allow, occupancy or hierarchical models address non-detection; otherwise transparent survey-adequacy thresholds and sensitivity analyses are used." },
-          { title: "Protected-area comparison", text: "Protected-area boundaries, land use, human footprint, elevation, and climate covariates support tests of whether protected landscapes maintain higher threat-weighted and functional intactness." },
-          { title: "Manuscript connection", text: "Each paper freezes database_version, analysis_script_version, figure_list, claim_table, and reference snapshots to make claims auditable." }
+          { title: "Quantified survey-adequacy thresholds", text: "Provisional minima for separating silent range from monitoring gap: mesocarnivores ≥1,000 camera-days and ≥15 stations; large carnivores ≥5,000 camera-days and ≥30 stations across ≥12 months; medium ungulates and ground-dwelling birds ≥600–800 camera-days and ≥10–12 stations; thresholds derived from cumulative detection-probability curves with sensitivity analysis." },
+          { title: "Red List weights and DD species", text: "The primary weighting scheme is geometric (LC=1, NT=2, VU=4, EN=8, CR=16); Data Deficient species are excluded from the main denominator and analysed as a separate Data-Deficiency Coverage Index." },
+          { title: "Climate-shift filter", text: "Using 1950s–2020s climate normals, silent ranges in spatial units whose climate envelope has shifted beyond a species' historical thermal niche are flagged as climate-explainable, separating climate-driven repositioning from anthropogenic defaunation." }
         ],
         views: ["view_species_site_evidence", "view_site_intactness_inputs", "view_pa_effectiveness_inputs", "view_redlist_mismatch_inputs"],
         sources: ["TW-CVII proposal", "Occupancy modelling", "Protected-area matching", "Red List sensitivity"]
