@@ -46,3 +46,14 @@ Martes sp.,貂属,Mammalia,Carnivora,Mustelidae,Martes,,LC,Class II,carnivore,me
 Rusa unicolor,水鹿,Mammalia,Artiodactyla,Cervidae,Rusa,unicolor,VU,Class II,herbivore,large,large_herbivore,ground,crepuscular,not endemic,4
 Naemorhedus goral,斑羚,Mammalia,Artiodactyla,Bovidae,Naemorhedus,goral,VU,Class II,herbivore,medium,large_herbivore,ground,diurnal,not endemic,4
 Macaca arctoides,熊猴,Mammalia,Primates,Cercopithecidae,Macaca,arctoides,NT,Class II,omnivore,medium,seed_disperser,arboreal,diurnal,not endemic,2
+Manis pentadactyla,中华穿山甲,Mammalia,Pholidota,Manidae,Manis,pentadactyla,CR,Class I,insectivore,medium,mesocarnivore,ground,nocturnal,China endemic,16
+Paradoxurus hermaphroditus,椰子狸,Mammalia,Carnivora,Viverridae,Paradoxurus,hermaphroditus,EN,Class II,omnivore,medium,mesocarnivore,arboreal,nocturnal,not endemic,8
+Mustela kathiah,黄腹鼬,Mammalia,Carnivora,Mustelidae,Mustela,kathiah,NT,none,carnivore,small,mesocarnivore,ground,crepuscular,not endemic,2
+Melogale moschata,鼬獾,Mammalia,Carnivora,Mustelidae,Melogale,moschata,NT,none,omnivore,small,mesocarnivore,ground,nocturnal,not endemic,2
+Muntiacus nigripes,海南麂,Mammalia,Artiodactyla,Cervidae,Muntiacus,nigripes,VU,Class II,herbivore,medium,large_herbivore,ground,crepuscular,China endemic,4
+Ratufa bicolor,巨松鼠,Mammalia,Rodentia,Sciuridae,Ratufa,bicolor,EN,Class II,herbivore,large,seed_disperser,arboreal,diurnal,not endemic,8
+Dremomys rufigenis,赤颊松鼠,Mammalia,Rodentia,Sciuridae,Dremomys,rufigenis,LC,none,omnivore,small,seed_disperser,arboreal,diurnal,not endemic,1
+Atherurus macrourus,帚尾豪猪,Mammalia,Rodentia,Hystricidae,Atherurus,macrourus,LC,none,herbivore,medium,large_herbivore,ground,nocturnal,not endemic,1
+Leopoldamys edwardsi,白腹巨鼠,Mammalia,Rodentia,Muridae,Leopoldamys,edwardsi,LC,none,omnivore,small,mesocarnivore,ground,nocturnal,not endemic,1
+Menetes berdmorei,赤腹松鼠属,Mammalia,Rodentia,Sciuridae,Menetes,berdmorei,LC,none,omnivore,small,seed_disperser,arboreal,diurnal,not endemic,1
+Pteropus hypomelanus,海南果蝠,Mammalia,Chiroptera,Pteropodidae,Pteropus,hypomelanus,LC,none,herbivore,medium,seed_disperser,arboreal,nocturnal,not endemic,1
