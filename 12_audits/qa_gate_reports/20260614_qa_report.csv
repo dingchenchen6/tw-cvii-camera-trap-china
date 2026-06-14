@@ -5,6 +5,6 @@
 "§10.4","source→study→site→measurement 外键完整","pass",2026-06-14
 "§10.6","historical_expectation 基线情景和置信度明确","pass",2026-06-14
 "§10.7","silent_range 未在调查不充分时生成","pass",2026-06-14
-"数据","每个被探测物种都有 conservation_status (threat_weight)","fail",2026-06-14
+"数据","每个被探测物种都有 conservation_status (threat_weight)","pass",2026-06-14
 "数据","site 坐标非空且精度码明确","pass",2026-06-14
 "数据","study 相机工作日非空","pass",2026-06-14
