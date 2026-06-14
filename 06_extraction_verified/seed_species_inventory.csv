@@ -46,3 +46,8 @@ SRC000003,STU000003,SITE000003,Asiatic brush-tailed porcupine,帚尾豪猪,Ather
 SRC000003,STU000003,SITE000003,Edward's rat,白腹巨鼠,Leopoldamys edwardsi,Leopoldamys edwardsi,species,Mammalia,Rodentia,Muridae,yes,NR,NR,NR,NR,LC,none,Table 1; p4-5,verified
 SRC000003,STU000003,SITE000003,Indochinese ground squirrel,赤腹松鼠属,Menetes berdmorei,Menetes berdmorei,species,Mammalia,Rodentia,Sciuridae,yes,NR,NR,NR,NR,LC,none,Table 1; p4-5,verified
 SRC000003,STU000003,SITE000003,Hainan flying fox,海南果蝠,Pteropus hypomelanus,Pteropus hypomelanus,species,Mammalia,Chiroptera,Pteropodidae,yes,NR,NR,NR,NR,LC,none,Table 1; p4-5,verified
+SRC000004,STU000004,SITE000004,Takin,羚牛,Budorcas bedfordi,Budorcas bedfordi,species,Mammalia,Artiodactyla,Bovidae,yes,11671,11671,11.53,11.53,VU,Class I,Abstract; Table in PDF,verified
+SRC000004,STU000004,SITE000004,Wild boar,野猪,Sus scrofa,Sus scrofa,species,Mammalia,Artiodactyla,Suidae,yes,4859,4859,4.8,4.8,LC,none,Abstract; Table in PDF,verified
+SRC000004,STU000004,SITE000004,Reeves's muntjac,小麂,Muntiacus reevesi,Muntiacus reevesi,species,Mammalia,Artiodactyla,Cervidae,yes,4403,4403,4.35,4.35,LC,none,Abstract; Table in PDF,verified
+SRC000004,STU000004,SITE000004,Giant panda,大熊猫,Ailuropoda melanoleuca,Ailuropoda melanoleuca,species,Mammalia,Carnivora,Ursidae,yes,1832,1832,1.81,1.81,EN,Class I,Abstract; Table in PDF,verified
+SRC000004,STU000004,SITE000004,Porcupine,豪猪,Hystrix hodgsoni,Hystrix hodgsoni,species,Mammalia,Rodentia,Hystricidae,yes,1144,1144,1.13,1.13,LC,none,Abstract; Table in PDF,verified

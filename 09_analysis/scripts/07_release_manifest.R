@@ -30,7 +30,7 @@ for (v in versions) {
     checksum_sha256        = file_sha256(v$db),
     qa_report_path         = if (v$ver=="v2_analysis_ready") "12_audits/qa_gate_reports/" else "",
     known_limitations      = if (v$ver=="v2_analysis_ready")
-      "seed=1 paper (Zhao2026 Huangshan); historical_expectation empty; some species lack conservation_status; site coords=centroid" else "",
+      "seed=4 sources; historical_expectation empty; SRC000004 has partial appendix extraction; site coords are protected-area centroids/ranges unless exact public coordinates are documented" else "",
     released_by            = "TW-CVII pipeline",
     stringsAsFactors       = FALSE)
 }

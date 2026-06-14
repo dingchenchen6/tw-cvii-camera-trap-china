@@ -1,0 +1,39 @@
+biods.2019240 (open access) — extracted metadata for database ingest
+====================================================================
+
+TITLE: Camera-trapping survey of mammals and birds in the Foping National Nature Reserve, China
+AUTHORS: Ma YS, Ma QQ, He NJ, Zhu DP, Zhao KH, Liu HC, Li S, Sun L, Tang LB (2020)
+JOURNAL: Biodiversity Science 28(2): 226-230 (data paper)
+DOI: 10.17520/biods.2019240
+URL: https://www.biodiversity-science.net/EN/10.17520/biods.2019240
+LICENSE: CC-BY 4.0 (open access)
+
+STUDY AREA: Foping National Nature Reserve, Qinling Mountains, Shaanxi
+  Province: 陕西 (Shaanxi), Hanzhong, Foping County
+  Centroid coords: ~33.6°N, 108.0°E (Qinling core giant panda habitat)
+  Elevation: montane forest (giant panda habitat belt)
+
+SAMPLING:
+  Camera traps: 130 (on 57 transects)
+  Survey period: 2015-01 to 2017-12 (3 years)
+  Camera-days: 101,220
+  Independent images: 36,100 (30,563 mammals + 3,244 birds)
+  Species: 29 wild mammals (15 families, 6 orders) + 54 birds (14 fam, 8 orders)
+
+TOP 5 MAMMAL SPECIES (by RAI, from abstract):
+  Budorcas bedfordi (Takin/羚牛) — RAI = 11.53
+  Sus scrofa (Wild boar/野猪) — RAI = 4.80
+  Muntiacus reevesi (Reeves's muntjac/小麂) — RAI = 4.35
+  Ailuropoda melanoleuca (Giant panda/大熊猫) — RAI = 1.81
+  Hystrix hodgsoni (Porcupine/豪猪) — RAI = 1.13
+
+NOTE: Full 29-species table is in the PDF appendix. This extraction records
+the 5 RAI-documented species + notes 24 additional mammal species detected
+(as detection_confirmed=yes, individual counts NR pending PDF table extraction).
+One new mammal record for Foping: Meles leucurus.
+
+EXTRACTION NOTES:
+  - 101,220 camera-days >> all survey-adequacy thresholds → adequate.
+  - Qinling temperate montane forest — 4th biome (temperate mountain).
+  - Giant panda (EN) core habitat — high conservation value.
+  - Per-species independent counts pending PDF appendix extraction.
