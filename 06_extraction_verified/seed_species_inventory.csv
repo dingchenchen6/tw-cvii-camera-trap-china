@@ -1,0 +1,16 @@
+source_id,study_id,site_id,species_original,chinese_name,scientific_name_original,scientific_name_accepted,taxon_rank,class,order,family,detection_confirmed,independent_records,valid_photos,rai_original,rai_per_100_camera_days,china_redlist_category,national_protection_class,extraction_page,verification_status
+SRC000001,STU000001,SITE000001,Chinese Hare,华南兔,Lepus sinensis,Lepus sinensis,species,Mammalia,Lagomorpha,Leporidae,yes,24,24,0.30,0.30,LC,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Yellow-throated Marten,青鼬,Martes flavigula,Martes flavigula,species,Mammalia,Carnivora,Mustelidae,yes,49,49,0.62,0.62,LC,Class II,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Siberian Weasel,黄鼬,Mustela sibirica,Mustela sibirica,species,Mammalia,Carnivora,Mustelidae,yes,4,4,0.05,0.05,LC,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,European Badger,狗獾,Meles meles,Meles meles,species,Mammalia,Carnivora,Mustelidae,yes,6,6,0.08,0.08,LC,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Hog Badger,猪獾,Arctonyx collaris,Arctonyx collaris,species,Mammalia,Carnivora,Mustelidae,yes,377,377,4.73,4.73,VU,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Masked Palm Civet,果子狸,Paguma larvata,Paguma larvata,species,Mammalia,Carnivora,Viverridae,yes,515,515,6.47,6.47,LC,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Crab-eating Mongoose,食蟹獴,Urva urva,Urva urva,species,Mammalia,Carnivora,Herpestidae,yes,19,19,0.24,0.24,LC,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Wild Boar,野猪,Sus scrofa,Sus scrofa,species,Mammalia,Artiodactyla,Suidae,yes,1420,1420,17.83,17.83,LC,none,Table 1; p10,verified
+SRC000001,STU000001,SITE000001,Reeves's Muntjac,小麂,Muntiacus reevesi,Muntiacus reevesi,species,Mammalia,Artiodactyla,Cervidae,yes,3480,3480,43.70,43.70,LC,none,Table 1; p10,verified
+SRC000001,STU000001,SITE000001,Black Muntjac,黑麂,Muntiacus crinifrons,Muntiacus crinifrons,species,Mammalia,Artiodactyla,Cervidae,yes,318,318,3.99,3.99,VU,Class I,Table 1; p10,verified
+SRC000001,STU000001,SITE000001,Serow,中华鬣羚,Capricornis sumatraensis,Capricornis sumatraensis,species,Mammalia,Artiodactyla,Bovidae,yes,113,113,1.42,1.42,VU,Class II,Table 1; p10,verified
+SRC000001,STU000001,SITE000001,Rhesus Macaque,猕猴,Macaca mulatta,Macaca mulatta,species,Mammalia,Primates,Cercopithecidae,yes,5,5,0.06,0.06,LC,Class II,Table 1; p11,verified
+SRC000001,STU000001,SITE000001,Tibetan Macaque,藏酋猴,Macaca thibetana huangshanensis,Macaca thibetana,species,Mammalia,Primates,Cercopithecidae,yes,797,797,10.01,10.01,NT,Class II,Table 1; p11,verified
+SRC000001,STU000001,SITE000001,Pallas's Squirrel,赤腹松鼠,Callosciurus erythraeus,Callosciurus erythraeus,species,Mammalia,Rodentia,Sciuridae,yes,1,1,0.01,0.01,LC,none,Table 1; p11,verified
+SRC000001,STU000001,SITE000001,Malayan Porcupine,豪猪,Hystrix brachyura,Hystrix brachyura,species,Mammalia,Rodentia,Hystricidae,yes,497,497,6.24,6.24,LC,none,Table 1; p11,verified

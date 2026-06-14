@@ -1,0 +1,2 @@
+source_id,file_id,extraction_batch,extractor,extraction_date,pages_checked,tables_checked,figures_checked,appendix_checked,supplement_checked,ocr_required,ocr_status,high_impact_fields_verified,unresolved_fields,confidence,verifier,verification_date
+SRC000001,Zhao2026_Huangshan_camera_trap_BDJ.pdf,SEED_20260613,human,2026-06-13,1-20,Table 1; Table 2,Fig 1-2,yes,yes,no,not_needed,yes,"protected_area_total_km2 unit ambiguous in source",high,TW-CVII,2026-06-13

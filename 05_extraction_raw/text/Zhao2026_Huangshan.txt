@@ -1,0 +1,827 @@
+              Biodiversity Data Journal 14: e184017
+              doi: 10.3897/BDJ.14.e184017
+
+
+                                                        Data Paper
+
+
+
+
+Camera trap survey of mammal diversity and
+activity rhythms of threatened species in a
+subtropical forest of Huangshan Mountain, China
+Wei Zhao‡, Meng-Meng Li‡, Xin-Rui Yan‡, Zheng Zhang§, Xiao-Chun Chen|, Zhao-Qian Chang§,
+Jia-Long Chen§, Jun-Jie Ma§, Zhe-Ping Xu¶,#, Jin-Min Chen‡, Ping Shin Lee‡, Fang Zhang‡
+   ‡ The Anhui Provincial Key Laboratory of Biodiversity Conservation and Ecological Security in the Yangtze River Basin,
+   College of Life Sciences, Anhui Normal University, Wuhu 241000, Anhui, China
+   § Shenzhen Taohuayuan Conservation Foundation, Shenzhen 518000, Guangdong, China
+   | Huangshan Jiulongfeng Nature Reserve Management Station, Huangshan 245000, Anhui, China
+   ¶ National Science Library, Chinese Academy of Sciences, Beijing 100190, China
+   # Department of Information Resources Management, School of Economics and Management, University of Chinese
+   Academy of Sciences, Beijing 100190, China
+
+
+
+
+   Corresponding author: Ping Shin Lee (leepingshin@gmail.com), Fang Zhang (biozhf@ahnu.edu.cn)
+
+   Academic editor: Gerson Paulino Lopes
+
+   Received: 01 Jan 2026 | Accepted: 26 Jan 2026 | Published: 19 Feb 2026
+
+   Citation: Zhao W, Li M-M, Yan X-R, Zhang Z, Chen X-C, Chang Z-Q, Chen J-L, Ma J-J, Xu Z-P, Chen J-M,
+   Lee PS, Zhang F (2026) Camera trap survey of mammal diversity and activity rhythms of threatened species
+   in a subtropical forest of Huangshan Mountain, China. Biodiversity Data Journal 14: e184017.
+   https://doi.org/10.3897/BDJ.14.e184017
+
+
+
+
+Abstract
+
+Background
+
+Understanding the activity rhythms of threatened mammals is crucial for designing
+effective conservation strategies. However, the systematic studies on mammals in
+Huangshan Mountain, one of China’s most biodiverse regions, are limited. Therefore, the
+current study aimed to document the diversity of medium- and large-sized mammals
+alongside the daily and seasonal activity rhythms of threatened species in the
+Jiulongfeng Nature Reserve of Huangshan Mountain.
+
+
+
+
+© Zhao W et al. This is an open access article distributed under the terms of the Creative Commons Attribution License (CC BY
+4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are
+credited.
+2                                      Zhao W et al
+
+
+
+
+New information
+
+A survey employing 32 infrared cameras over 7964 camera-days from March 2022 to
+March 2023 yielded 7625 independent detections of 15 species belonging to five orders,
+13 genera and 10 families. The top five species with the highest relative abundance
+index (RAI) values were Reeves’s Muntjac (Muntiacus reevesi), Wild Boar (Sus scrofa),
+Tibetan Macaque (Macaca thibetana huangshanensis), Masked Palm Civet (Paguma
+larvata), and Malayan Porcupine (Hystrix brachyura). We describe the diel activity
+rhythms and seasonal altitudinal migration patterns of seven focal threatened species.
+The daily activity patterns of Reeves’s Muntjacs, Black Muntjacs (Muntiacus crinifrons)
+and Tibetan Macaques were bimodal and predominantly diurnal, whereas Masked Palm
+Civets, Malayan Porcupines, Hog Badgers (Arctonyx collaris), and Serows (Capricornis
+sumatraensis) were nocturnal. Activity peaks also shifted seasonally. We further
+observed seasonal altitudinal migration patterns: diurnal mammals, such as Reeves's
+Muntjacs, Black Muntjacs and Tibetan Macaques, frequented mid-altitude in summer,
+while nocturnal species, such as Hog Badgers, Malayan Porcupines and Masked Palm
+Civets were more common at mid-altitude in winter. This pattern could be attributed to
+thermoregulation and other ecological factors. This work contributes valuable baseline
+data on mammalian biodiversity and behavioural ecology in an understudied region, with
+implications for the conservation management of protected areas in subtropical China.
+
+
+
+Keywords
+community composition, conservation, seasonal altitudinal migration, species of
+conservation concern
+
+
+
+Introduction
+As keystone components of biodiversity, mammals play a vital role in maintaining the
+balance and stability of ecosystems (Stevens et al. 2019). However, with the continuous
+expansion of human activities and the deterioration of the environment, many mammal
+species are threatened at present and effective monitoring is essential for the
+conservation of local animal diversity (Ceballos and Ehrlich 2006). In assessments of
+mammalian diversity, activity rhythms are important parameters, as they can reveal the
+habits and behavioural patterns of mammals (Amstrup and Beecham 1976). The
+variation in activity rhythms of animals across times and seasons can reflect the
+adaptations, circadian rhythms, seasonal distribution patterns and other characteristics of
+individual animals (Azevedo et al. 2018).
+
+In recent years, the infrared camera monitoring method has been widely used in mammal
+diversity surveys and activity rhythm studies in protected areas owing to its attributes of
+continuous monitoring, low interference and non-invasiveness (Deng et al. 2021, Zhou et
+al. 2022, Pang et al. 2025, Yang et al. 2025). Infrared camera surveys are especially
+           Camera trap survey of mammal diversity and activity rhythms of threatened ...   3
+
+
+
+convenient for monitoring the density and distribution of threatened species and
+revealing their ecological habits and behavioural patterns (Burton et al. 2015, Ikeda et al.
+2016, Ogurtsov et al. 2018). For example, this method has successfully revealed the
+activity rhythms of threatened mammals, such as the Black Muntjac Muntiacus crinifrons
+(P.L. Sclater, 1885) (Zhang et al. 2012), Reeves’s Muntjac Muntiacus reevesi (W. Ogilby,
+1839) (Kong et al. 2024), Serow Capricornis sumatraensis (Bechstein, 1799) (Jia et al.
+2022), Masked Palm Civet Paguma larvata (Griffith, 1822) ( Duan et al. 2024), Hog
+Badger Arctonyx collaris F. Cuvier in É. Geoffroy Saint-Hilaire & F. Cuvier, 1825 (Jiang et
+al. 2021), Malayan Porcupine Hystrix brachyura Linnaeus, 1758 (Dai et al. 2021) and
+Tibetan Macaque Macaca thibetana huangshanensis Jiang Xuelong & Wang Qishan in
+Jiang Xuelong, Wang Yingxiang and Wang Qishan, 1996 (Jia et al. 2022).
+
+Despite these advancements, systematic research on mammal activity rhythms in many
+highly biodiverse regions, including the Huangshan Mountain, remains scarce.
+Recognised by the IUCN as one of the world's 108 biodiversity centres and a national
+conservation priority in China, the Huangshan Mountain supports a rich range of
+mammalian fauna (Huang et al. 2015). However, foundational data on the activity
+patterns of its threatened mammal community are lacking, hindering the development of
+management plans for its protected areas. The Jiulongfeng Nature Reserve (JLF),
+located within the Huangshan Mountain range, is characterised by its high mountains,
+dense subtropical forests and deep gorges, all of which provide critical habitats for a
+variety of wildlife (Wu 2019). To date, comprehensive research on the activity rhythms of
+mammals in the Jiulongfeng Reserve has not been conducted.
+
+
+
+General description
+Purpose: The study aimed to document the community composition of medium- to large-
+sized mammals and investigated the activity rhythms of threatened species in the JLF
+using camera-trapping data, thereby providing baseline data on the unique wild mammal
+species of the study area.
+
+
+
+Project description
+Study area description: The JLF is located between 117°56'32"~118°03'55"E longitude
+and 30°04'05"~30°10'23"N latitude. The annual average temperature is 15.5°C; the
+extreme maximum temperature is 40.7°C and the extreme minimum temperature is
+−14.7°C. The annual average precipitation is about 1759 mm; the total area is 2720 km2
+and the highest altitude is 1281 m. The territory is characterised by continuous
+mountains, overlapping peaks, a mild climate and abundant rainfall (Wu 2019).
+
+Design description: We employed 32 infrared camera traps (Yianws L710, Shenzhen,
+China) to conduct wild mammal surveys from March 2022 to March 2023 (Fig. 1). Based
+on the observed signs of animal activities (e.g. trails, scat, nests and feeding traces),
+forest-land locations that were more open and closer to water sources were selected to
+4                                             Zhao W et al
+
+
+
+install the infrared cameras and information, such as the camera shooting time, ambient
+temperature, deployment habitat and altitude of each camera site, was recorded.
+
+
+
+
+    Figure 1.
+    Location of camera traps in the Jiulongfeng Nature Reserve.
+
+
+Funding: This research was funded by the National Natural Science Foundation of China
+(NSFC 32470458; 32001222), Anhui Provincial Key Laboratory of the Conservation and
+Exploitation of Biological Resources (No. 591601) and the Innovation and
+Entrepreneurship Training Programme for Undergraduates Students (S202410370265;
+202510370712).
+
+
+
+Sampling methods
+Description: Species were identified by analysing the captured photos and videos. We
+placed each camera on relatively flat terrain 50 cm above the ground and removed all
+vegetation and debris from the camera view. The spacing between the cameras was at
+least 200 m to ensure spatial independence. All cameras were monitored 24 hours a day
+and all camera parameters were set uniformly, including the date and shooting mode (3
+photos + 1 video mode).
+
+Quality control: To ensure accurate species identification, the authors thoroughly
+reviewed the photos and cross-checked the nomenclature, consulting the IUCN Red List
+(IUCN 2025) and considering each species' conservation status. Afterwards, all
+ambiguous records that could not be identified at the genus level were excluded from the
+           Camera trap survey of mammal diversity and activity rhythms of threatened ...     5
+
+
+
+final analysis. The records belonging to Muridae were thus removed from the dataset, as
+we were unable to identify them at the species level.
+
+Step description: The photo and video data captured by the infrared cameras were
+archived and saved according to the camera numbers and corresponding folders were
+created. Information, such as the file numbers, formats and shooting dates and times, was
+extracted from each folder and recorded in Excel. Species identification was conducted
+using the image data and independent detections were screened. An independent photo
+refers to adjacent images of the same individual at the same camera site with an interval
+of at least 30 minutes (O'Brien et al. 2006).
+
+The richness of each wild animal species was represented by RAI (Relative Abundance
+Index, i.e. the number of independent detections per 100 camera days) and multiple α-
+diversity indices were used to evaluate the differences in species richness between low-
+altitude and mid-altitude areas (Shannon 1948, Simpson 1949). The dilution curves were
+constructed using the Chao 1 method implemented in EstimateS 9.1.0 (Colwell 2019)
+and the sampling saturation of the infrared camera monitoring was explored. To estimate
+the daily and seasonal activity patterns of wild animals, we used kernel density analysis
+(Ridout and Linkie 2009) via the ‘activity’ package for R (R Core Team 2025). According
+to the climatic characteristics of the study area, 18:00–06:00 h was taken as the night-
+time and the night-time relative abundance index (NRAI) of each species was calculated.
+If the NRAI was greater than 13/24 (0.542), the species was considered a nocturnal
+animal (Li et al. 2014).
+
+The altitude of the survey area in this investigation ranged from 433 m to 1203 m. Due to
+the limited altitude range of the camera sites set in this study, the altitude was divided into
+low altitude (400–780 m) and mid-altitude (780–1210 m). The four seasons were divided
+as follows: spring from March to May, summer from June to August, autumn from
+September to November and winter from December to February of the following year.
+
+
+
+Geographic coverage
+Description: The Jiulongfeng Nature Reserve of Huangshan Mountain, Anhui, China.
+
+Coordinates: 30.06806 and 30.17306 Latitude; 117.94222 and 118.06528 Longitude.
+
+
+
+Taxonomic coverage
+Description: In this study, we covered the following taxonomic groups: Class: Mammalia;
+Orders: Lagomorpha, Carnivora, Rodentia, Artiodactyla and Primates; Families:
+Leporidae, Mustelidae, Viverridae, Herpestidae, Suidae, Cervidae, Bovidae,
+Cercopithecidae and Sciuridae.
+6                                         Zhao W et al
+
+
+
+Taxa included:
+
+Rank                    Scientific Name                  Common Name
+
+class                   Mammalia                         Mammals
+
+order                   Lagomorpha                       Hares
+
+order                   Carnivora                        Carnivores
+
+order                   Artiodactyla                     Ruminants
+
+order                   Primates                         Primates
+
+order                   Rodentia                         Rodents
+
+family                  Leporidae                        Hares
+
+family                  Mustelidae                       Mustelids
+
+family                  Viverridae                       Civets
+
+family                  Herpestidae                      Mongooses
+
+family                  Suidae                           Pigs
+
+family                  Cervidae                         Deers
+
+family                  Bovidae                          Bovids
+
+family                  Cercopithecidae                  Monkeys
+
+family                  Sciuridae                        Squirrels
+
+family                  Hystricidae                      Porcupines
+
+
+
+
+Temporal coverage
+Data range: 2022-3-24 - 2023-3-31.
+
+
+
+Usage licence
+Usage licence: Other
+
+IP rights notes: Creative Commons Attribution 4.0 International (CC-BY-4.0).
+
+
+
+Data resources
+Data package title: Camera trap survey of mammal diversity in a subtropical forest of
+Huangshan Mountain, China.
+
+Resource link: https://doi.org/10.15468/94t4wd
+            Camera trap survey of mammal diversity and activity rhythms of threatened ...                    7
+
+
+
+Alternative identifiers: https://www.gbifchina.org.cn/resource?r=zw20000919
+
+Number of data sets: 1
+
+   Data set name: Camera trap survey of mammal diversity in a subtropical forest of
+   Huangshan Mountain, China.
+
+   Download URL: https://www.gbifchina.org.cn/archive.do?r=zw20000919
+
+   Data format: Darwin Core Archive
+
+   Data format version: version 1.6
+
+   Description: The dataset was published in GBIF (Zhao and Chen 2025). The
+   following data table includes all the records for which a taxonomic identification of the
+   species was possible. The dataset submitted to GBIF is structured as a sample event
+   dataset, with two tables: event and occurrences. The data in this sampling event
+   resource have been published as a Darwin Core Archive (DwC-A), which is a
+   standardised format for sharing biodiversity data as a set of one or more data tables.
+   The core data table contains 32 records (eventID). One extension data table also
+   exists with 7625 occurrences.
+
+    Column label                            Column description
+
+    id (Event Core, Occurrence Extension)   Unique identifier.
+
+    eventID (Event Core, Occurrence         A unique identifier linking events and occurrences.
+    Extension)
+
+    samplingProtocol (Event Core)           The sampling method used.
+
+    samplingEffort (Event Core)             The number of camera-trap days expended during an event.
+
+    eventDate (Event Core, Occurrence       Date or date range the record was collected.
+    Extension)
+
+    locationID (Event Core)                 An identifier of the camera location.
+
+    country (Event Core)                    Country in which camera location occurs.
+
+    countryCode (Event Core)                ISO code of the country.
+
+    stateProvince (Event Core)              Name of the region in which camera location occurs.
+
+    decimalLatitude (Event Core)            The geographic latitude, in decimal degrees.
+
+    decimalLongitude (Event Core)           The geographic longitude, in decimal degrees.
+
+    geodeticDatum (Event Core)              The reference point for the various coordinate systems used in
+                                            mapping the earth.
+
+    coordinateUncertaintyInMetres (Event    Uncertainty of the coordinates, in metres.
+    Core)
+
+    occurrenceID (Occurrence Extension)     Unique identifier of the record.
+8                                                 Zhao W et al
+
+
+
+    basisOfRecord (Occurrence Extension)          The specific nature of the data record.
+
+    occurrenceStatus (Occurrence Extension)       A statement about the presence or absence of a taxon at a location.
+
+    kingdom (Occurrence Extension)                Kingdom name in which the taxon is classified.
+
+    phylum (Occurrence Extension)                 Phylum name in which the taxon is classified.
+
+    class (Occurrence Extension)                  Class name in which the taxon is classified.
+
+    order (Occurrence Extension)                  Order name in which the taxon is classified.
+
+    family (Occurrence Extension)                 Family name in which the taxon is classified.
+
+    scientificName (Occurrence Extension)         The full scientific name includes author and year.
+
+    infraspecificEpithet (Occurrence Extension)   Subspecies name in which the taxon is classified.
+
+    taxonRank (Occurrence Extension)              The taxonomic rank of the most specific name in the
+                                                  scientificName.
+
+    dynamicProperties (Occurrence Extension)      IUCN Red List status of the taxon.
+
+    vernacularName (Occurrence Extension)         The common name of a species.
+
+
+
+
+Additional information
+Results
+The survey was a total effective working period of 7964 days, producing a total of 7625
+independent mammal photo detections. Accordingly, 15 mammal species were identified
+(Fig. 2), with the species belonging to five orders and 10 families, including six
+carnivores, four even-toed ungulates, two primates, two rodents and one rabbit,
+accounting for 28.85% of the total number of mammal species recorded from JLF (Suppl.
+material 1). Amongst these, there was one species of Black Muntjac, a national Class I
+protected wild animal and four species of wild animals under national Class II protection:
+the Yellow-throated Marten Martes flavigula (Boddaert, 1785), the Serow, the Rhesus
+Macaque Macaca mulatta (E.A.W. von Zimmermann, 1780) and the Tibetan Macaque.
+Three species were listed as Vulnerable (VU) on the IUCN: the Black Muntjac, the Serow
+and the Hog Badger. The one species listed as Near Threatened (NT) was the Tibetan
+Macaque. The top five species with high RAI were Reeves’s Muntjac (RAI = 43.70), the
+Wild Boar Sus scrofa Linnaeus, 1758 (RAI = 17.83), the Tibetan Macaque (RAI = 10.01),
+the Masked Palm Civet (RAI = 6.47) and the Malayan Porcupine (RAI = 6.24) (Table 1).
+
+The number of species monitored by infrared cameras was positively correlated with the
+monitoring time. The rarefaction curve achieved full saturation (completeness = 1.0) (Fig.
+3). After all cameras were placed in the wild for one month, a total of 12 species of
+mammals were captured. After five months, 14 species of mammals were photographed.
+The number of species captured increased with an increase in monitoring time, but the
+trend of the increase in the number of species slowed down after three months.
+              Camera trap survey of mammal diversity and activity rhythms of threatened ...               9
+
+
+
+
+Table 1.
+Species diversity of mammals in the Jiulongfeng Nature Reserve.
+
+
+Species                                     Common        IUCN   National Key   Number of     Relative
+                                                          Red    Protection     independent   abundance
+                                            name
+                                                          List   Level          photos        index
+
+LAGOMORPHA
+
+Leporidae
+
+Lepus sinensis J.E. Gray, 1832              Chinese       LC     -              24            0.30
+                                            Hare
+
+CARNIVORA
+
+Mustelidae
+
+Martes flavigula (Boddaert, 1785)           Yellow-       LC     II             49            0.62
+                                            throated
+                                            Marten
+
+Mustela sibirica Pallas, 1773               Siberian      LC     -              4             0.05
+                                            Weasel
+
+Meles meles (Linnaeus, 1758)                European      LC     -              6             0.08
+                                            Badger
+
+Arctonyx collaris F. Cuvier in É.           Hog Badger    VU     -              377           4.73
+Geoffroy Saint-Hilaire & F. Cuvier, 1825
+
+Viverridae
+
+Paguma larvata (Griffith, 1822)             Masked        LC                    515           6.47
+                                            Palm Civet
+
+Herpestidae
+
+Urva urva (B.H. Hodgson, 1836)              Crab-eating   LC                    19            0.24
+                                            Mongoose
+
+ARTIODACTYLA
+
+Suidae
+
+Sus scrofa Linnaeus, 1758                   Wild Boar     LC     -              1,420         17.83
+
+Cervidae
+
+Muntiacus reevesi (W. Ogilby, 1839)         Reeves's      LC     -              3,480         43.70
+                                            Muntjac
+
+Muntiacus crinifrons (P.L. Sclater, 1885)   Black         VU     I              318           3.99
+                                            Muntjac
+
+Bovidae
+
+Capricornis sumatraensis                    Serow         VU     II             113           1.42
+(Bechstein, 1799)
+
+PRIMATES
+10                                                  Zhao W et al
+
+
+
+Species                                  Common           IUCN     National Key   Number of     Relative
+                                                          Red      Protection     independent   abundance
+                                         name
+                                                          List     Level          photos        index
+
+Cercopithecidae
+
+Macaca mulatta (E.A.W. von               Rhesus           LC       II             5             0.06
+Zimmermann, 1780)
+                                         Macaque
+
+Macaca thibetana huangshanensis Jiang Tibetan             NT       II             797           10.01
+Xuelong & Wang Qishan in Jiang           Macaque
+Xuelong, Wang Yingxiang, & Wang
+Qishan, 1996
+
+RODENTIA
+
+Sciuridae
+
+Callosciurus erythraeus (Pallas, 1779)   Pallas's         LC       -              1             0.01
+                                         Squirrel
+
+Hystricidae
+
+Hystrix brachyura Linnaeus, 1758         Malayan          LC       -              497           6.24
+                                         Porcupine
+
+
+
+
+ Figure 2.
+ Mammalian species captured by infrared cameras at the Jiulongfeng Nature Reserve: A
+ Serow (Capricornis sumatraensis); B Reeves’s Muntjac ( Muntiacus reevesi); C Hog Badger
+ (Arctonyx collaris); D Masked Palm Civet ( Paguma larvata); E Black Muntjac ( Muntiacus
+ crinifrons); F Tibetan Macaque ( Macaca thibetana huangshanensis); G Malayan Porcupine
+ (Hystrix brachyura); H Crab-eating Mongoose ( Urva urva); I Rhesus Macaque ( Macaca
+ mulatta).
+              Camera trap survey of mammal diversity and activity rhythms of threatened ...             11
+
+
+
+We compared mammal α-diversity between two altitudinal zones, with 16 camera sites in
+each quadrat and the results showed that both the diversity and evenness indices were
+comparatively higher in the mid-altitude zone (Table 2).
+
+
+
+
+ Figure 3.
+ Expected species richness curve and sampling completeness ratios (in parentheses) at the
+ Jiulongfeng Nature Reserve, with the dotted lines representing the 95% confidence intervals of
+ the expected species richness in the Jiulongfeng Nature Reserve.
+
+
+
+ Table 2.
+ Species α-diversity of mammals in the Jiulongfeng Nature Reserve.
+
+
+Altitude gradient            Number of cameras    Shannon-Weiner index   Pielou index   Simpson index
+
+Low altitude (400–780 m)     16                   1.610                  0.594          0.309
+
+Mid-altitude (780–1,210 m)   16                   1.687                  0.639          0.259
+
+
+The overall daily activity patterns of Reeves’s Muntjacs, Black Muntjacs and Tibetan
+Macaques were similar and the activity curve was "M"-shaped, demonstrating a typical
+bimodal pattern, with clear activity peaks in the morning and dusk (Fig. 4A). Black
+Muntjacs showed similar diurnal activity patterns in spring, summer and autumn, but
+became more crepuscular in winter, with a single peak at 18:00 h. While Reeves’s
+Muntjacs and Tibetan Macaques shared similar activity frequencies in spring, summer
+and autumn, their winter patterns diverged: Tibetan Macaques displayed a single peak,
+whereas Reeves’s Muntjacs showed three peaks, including a minor one at noon (12:00
+h). Masked Palm Civets and Malayan Porcupines were both nocturnal, with a "U"-shaped
+activity curve and a pronounced daytime lull. However, the seasonal consistency of their
+12                                           Zhao W et al
+
+
+
+peak activity differed: Malayan Porcupines maintained similar peaks across all seasons,
+while Masked Palm Civets peaks varied, though they predominantly occurred between
+22:00 h and 03:00 h. Serows and Hog Badgers both exhibited fluctuating activity rhythms,
+with primary peaks occurring between 04:00–06:00 h and 18:00–20:00 h.
+
+
+
+
+ Figure 4.
+ Daily activity patterns (A) and seasonal altitudinal migration (B) of seven threatened species in
+ the Jiulongfeng Nature Reserve.
+
+
+The nocturnal relative abundance index (NRAI) for the seven focal species was
+calculated as 0.961, 0.949, 0.663, 0.575, 0.481, 0.147 and 0.066 (Fig. 5). Based on a
+threshold of 13/24, Reeves’s Muntjacs, Black Muntjacs and Tibetan Macaques were
+classified as diurnal, whereas Malayan Porcupines, Masked Palm Civets and Hog
+Badgers were nocturnal. The Serow, with an NRAI of 0.575, was not strictly nocturnal.
+
+
+
+
+ Figure 5.
+ Nocturnal indices of seven threatened species in the Jiulongfeng Nature Reserve.
+
+
+Monthly relative activity intensity differed significantly for Hog Badgers and Tibetan
+Macaques, but not for Masked Palm Civets, Black Muntjacs, Reeves’s Muntjacs, Serows
+or Malayan Porcupines (Suppl. material 2). Notably, Hog Badgers were only active in
+spring and summer; the activity frequency gradually increased from March, peaked in
+April and subsequently declined. Activity peaks for other species were observed in
+Tibetan Macaques and Reeves’s Muntjacs (May), Malayan Porcupines (October), Black
+             Camera trap survey of mammal diversity and activity rhythms of threatened ...   13
+
+
+
+Muntjacs (November) and Serows (summer). Masked Palm Civets had the highest
+activity intensity in spring, which decreased markedly after July (Fig. 6).
+
+
+
+
+ Figure 6.
+ Annual activity patterns of seven threatened species in the Jiulongfeng Nature Reserve.
+
+
+Significant seasonal variation in altitude selection was observed for Hog Badgers,
+Masked Palm Civets and Black Muntjacs, but not for Reeves’s Muntjacs, Serows,
+Malayan Porcupines and Tibetan Macaques across seasons (Suppl. material 2). Hog
+Badgers tended to inhabit low altitudes in spring and summer and mid-altitudes in
+autumn and winter, opposite to the altitude distribution of Tibetan Macaques. Masked
+Palm Civets chose low altitude in spring, summer and autumn and mid-altitude in winter.
+Reeves’s Muntjacs and Serows tended to inhabit mid-altitude in summer and low altitude
+in spring, autumn and winter. Malayan Porcupines chose low altitudes in spring and
+autumn and mid-altitudes in summer and winter. Black Muntjacs tended to be at mid-
+altitude throughout the year (Fig. 4B).
+
+
+Discussion
+Our dataset establishes a crucial baseline for future ecological research, long-term
+monitoring and informed conservation management in the Huangshan Mountain. The
+capture of 15 medium- to large-sized species underscores the considerable conservation
+value in JLF and the effectiveness of our survey. The rarefaction curve confirms that our
+sampling effort was sufficiently robust to adequately characterise the core mammal
+14                                       Zhao W et al
+
+
+
+community at the camera sites. The dominance of Wild Boars and Reeves's Muntjacs in
+the RAI rankings is consistent with findings from other subtropical Chinese Reserves
+(Burton et al. 2015, Liu et al. 2017, Zhou et al. 2018, Zhu 2022, Xu et al. 2023).
+
+The analysis of activity rhythms revealed profound interspecific and seasonal variations,
+reflecting distinct adaptive strategies. For example, the strict nocturnality of Malayan
+Porcupines and Masked Palm Civets aligns with their foraging ecology and this may
+represent a behavioural adaptation to avoid diurnal human activity (Yuan and Kong 2011
+). In contrast, the bimodal patterns of Reeves's Muntjacs and Tibetan Macaques, which
+shifted to include heightened mid-day activity in winter, are an energy-saving strategy to
+capitalise on warmer daytime temperatures and compensate for the reduced foraging
+time during shorter days (Chen et al. 2022).
+
+The observed seasonal altitudinal migrations suggest a complex trade-off between
+multiple ecological factors. The Hog Badgers and Masked Palm Civets descending to
+lower altitudes in spring and summer could be driven by the greater abundance of food
+resources (Wang et al. 2009). The year-round preference of Black Muntjacs for mid-
+altitude indicates specific habitat requirements that may be related to denser understorey
+cover that provides both forage and refuge from disturbance (Moen 1976, Bao et al.
+2006). Future research should integrate fine-scale vegetation mapping, the direct
+quantification of human disturbance and climate data towards a mechanistic
+understanding of these ecological dynamics.
+
+
+
+Acknowledgements
+The infrared camera data and sampling approval were provided by the Jiulongfeng
+Nature Reserve Management Station of Huangshan Mountain. We are also deeply
+grateful for the support of the Paradise International Foundation.
+
+
+
+Author contributions
+Conceptualisation: L.P.S., Z.F. Data curation: Z.W., L.P.S., C.J.M., X.Z.P. Investigation:
+C.X.C., C.Z.Q., L.M.M., M.J.J., C.J.L. Methodology: L.P.S., Z.W. Project administration:
+L.P.S., C.J.M., C.X.C. Resources: C.X.C. Supervision: L.P.S., Z.Z., Z.F. Writing—original
+draft: Z.W., Y.X.R., L.P.S. Writing—review and editing: L.P.S., C.J.M., Z.Z., Z.F. All authors
+reviewed and approved the final manuscript.
+
+
+
+References
+
+  •    Amstrup SC, Beecham J (1976) Activity patterns of radio-collared black bears in Idaho.
+       The Journal of Wildlife Management 40 (2): 340‑348. https://doi.org/10.2307/3800435
+  •    Azevedo FC, Lemos FG, Freitas‐Junior MC, Rocha DG, Azevedo FCC (2018) Puma
+       activity patterns and temporal overlap with prey in a human‐modified landscape at
+       Camera trap survey of mammal diversity and activity rhythms of threatened ...       15
+
+
+
+    Southeastern Brazil. Journal of Zoology 305 (4): 246‑255. https://doi.org/10.1111/jzo.
+    12558
+•   Bao Y, Zheng X, Ge B (2006) Assessment and protective strategy of black muntjac
+    habitat in Zhejiang, China. Acta Ecologica Sinica 26 (8): 2425‑2431. https://doi.org/
+    10.1016/S1872-2032(06)60037-1
+•   Burton AC, Neilson E, Moreira D, Ladle A, Steenweg R, Fisher J, Bayne E, Boutin S
+    (2015) REVIEW: Wildlife camera trapping: a review and recommendations for linking
+    surveys to ecological processes. Journal of Applied Ecology 52 (3): 675‑685. https://
+    doi.org/10.1111/1365-2664.12432
+•   Ceballos G, Ehrlich PR (2006) Global mammal distributions, biodiversity hotspots, and
+    conservation. Proceedings of the National Academy of Sciences 103 (51): 19374‑19379.
+    https://doi.org/10.1073/pnas.0609334103
+•   Chen E, Guan T, Li S (2022) Population sex ratio, social structure and activity rhythm of
+    Minshan muntjacs in Sichuan. Acta Theriologica Sinica 42 (1): 1‑11. [In Chinese]. https://
+    doi.org/10.16829/j.slxb.150576
+•   Colwell RK (2019) EstimateS: Statistical estimation of species richness and shared
+    species from samples. 9.1.0. URL: https://www.robertkcolwell.org/pages/1407-estimates
+•   Dai Z, Yang G, Hu C, Zhang M, Su H (2021) Activity rhythm of Hystrix brachyura and its
+    meteorological affecting factors in the Xishui National Nature Reserve, Guizhou. Sichuan
+    Journal of Zoology 40 (4): 415‑423. [In Chinese]. https://doi.org/10.11984/j.issn.
+    1000-7089.20200433
+•   Deng S, Li J, Qu Y, He J, Liu K, Xue H, Cui P, Ruan X, Wu H (2021) Camera trap reveals
+    the co-occurrence patterns of two sympatric muntjac species in Southern Anhui Province,
+    China: No spatial segregation. Ecology and Evolution 11 (24): 17801‑17809. https://
+    doi.org/10.1002/ece3.8307
+•   Duan S, Jin J, Zhang D, Yu D, Jin C, Yang S (2024) Study on the distribution and activity
+    rhythm of masked palm civets in Southern Yunling Mountains based on infrared camera.
+    Chinese Journal of Wildlife 45 (1): 8‑15. [In Chinese]. https://doi.org/10.12375/ysdwxb.
+    20240102
+•   Huang L, Zhang Y, Li W (2015) Yellow Mountain Resort a tentative example in excellence
+    management of protected areas. World Heritages 11 (4): 50‑55. [In Chinese].
+•   Ikeda T, Uchida K, Matsuura Y, Takahashi H, Yoshida T, Kaji K, Koizumi I (2016)
+    Seasonal and Diel Activity Patterns of Eight Sympatric Mammals in Northern Japan
+    Revealed by an Intensive Camera-Trap Survey. Plos One 11 (10): e0163602. https://
+    doi.org/10.1371/journal.pone.0163602
+•   IUCN (2025) The IUCN Red List of Threatened Species. https://www.iucnredlist.org/.
+    Accessed on: 2025-11-11.
+•   Jiang J, Ju L, Fan Y, Zhang H, Song Z, Bao W (2021) Camera trapping based distribution
+    and daily activity rhythm of wild mammals in the Beijing Songshan National Nature
+    Reserve. Sichuan Journal of Zoology 40 (4): 374‑382. [In Chinese]. https://doi.org/
+    10.11984/j.issn.1000-7089.20200438
+•   Jia W, He Q, Yan S, Luo T, Wu H, Deng H, Zhou J (2022) Preliminary study on the niche
+    differentiation of grey snub-nosed monkey and Tibetan macaque in Fanjing Mountain in
+    winter and spring. Chinese Journal of Zoology 57 (4): 503‑513. [In Chinese]. https://
+    doi.org/10.13859/j.cjz.202204003
+•   Kong F, Shen B, Li X, Zhou Y, Li Y, Li J, Wan Y, Liu W, Hu H, Liu B, Ma Z, Zhan J (2024)
+    Analysis of seasonal activity rhythm and interspecific differences in sympatric ungulates
+16                                      Zhao W et al
+
+
+
+     in Jiangxi Taohongling Reserve. Chinese Journal of Wildlife 45 (2): 242‑250. [In Chinese].
+     https://doi.org/10.12375/ysdwxb.20240202
+ •   Li S, Zhang X, Chen P, Wang J, Xiang D, Dong W, Zhang X, He B, Sun R, Zhao N, Wang
+     D (2014) The community structure and elevational patterns of forest ungulates at the
+     southern slope of the Qinling Mountains, China. Chinese Journal of Zoology 49 (5):
+     633‑643. [In Chinese]. https://doi.org/10.13859/j.cjz.201405001
+ •   Liu K, He J, Zhang J, Feng J, Yu Q, Gu C, Wu H (2017) Mammal resource status in the
+     mountain forest ecosystems of Southern Anhui Province based on camera trap data.
+     Biodiversity Science 25 (8): 896‑903. [In Chinese]. https://doi.org/10.17520/biods.2017031
+ •   Moen AN (1976) Energy conservation by white-tailed deer in the winter. Ecology 57 (1):
+     192‑198. https://doi.org/10.2307/1936411
+ •   O'Brien TG, Kinnaird MF, Wibisono HT (2006) Crouching tigers, hidden prey: Sumatran
+     tiger and prey populations in a tropical forest landscape. Animal Conservation 6 (2):
+     131‑139. https://doi.org/10.1017/s1367943003003172
+ •   Ogurtsov SS, Zheltukhin AS, Kotlov IP (2018) Daily activity patterns of large and
+     medium-sized mammals based on camera traps data in the Central Forest Nature
+     Reserve, Valdai Upland, Russia. Nature Conservation Research 3 (2): 68‑88. https://
+     doi.org/10.24189/ncr.2018.031
+ •   Pang D, Wang L, Lu Y, Huang J, Xu P, Jiang Q, Ding Z, Chen Y, Ding J, Zhang B (2025)
+     Temporal niche patterns of Anhui musk deer (Moschus anhuiensis) and sympatric
+     ungulates. Acta Theriologica Sinica 45 (3): 302‑311. [In Chinese]. https://doi.org/10.16829/
+     j.slxb.150912
+ •   R Core Team (2025) R: A Language and Environment for Statistical Computing. R
+     Foundation for Statistical Computing, Vienna, Austria. URL: https://www.R-project.org/
+ •   Ridout MS, Linkie M (2009) Estimating overlap of daily activity patterns from camera trap
+     data. Journal of Agricultural, Biological, and Environmental Statistics 14 (3): 322‑337.
+     https://doi.org/10.1198/jabes.2009.08038
+ •   Shannon CE (1948) A mathematical theory of communication. The Bell System Technical
+     Journal 27 (3): 379‑423. https://doi.org/10.1002/j.1538-7305.1948.tb01338.x
+ •   Simpson EH (1949) Measurement of diversity. Nature 163 (4148): 688. https://doi.org/
+     10.1038/163688a0
+ •   Stevens RD, Rowe RJ, Badgley C (2019) Gradients of mammalian biodiversity through
+     space and time. Journal of Mammalogy 100 (3): 1069‑1086. https://doi.org/10.1093/
+     jmammal/gyz024
+ •   Wang J, Liu Q, Tang D, Jiang G, Suo J, Zheng Z, Gong R, Wang Y, Hua Y (2009) Habitat
+     selection of masked palm civet in Houhe Nature Reserve, Hubei. Acta Theriologica
+     Sinica 29 (2): 216‑222. [In Chinese]. https://doi.org/10.16829/j.slxb.2009.02.017
+ •   Wu XB (2019) Comprehensive investigation report of Jiulongfeng Provincial Nature
+     Reserve, Anhui Province. Forestry Department of Jiulongfeng Nature Reserve of the
+     Huangshan Mountain, Wuhu, China. [In Chinese].
+ •   Xu S, Pang D, Ding J, Huang J, Ding Z, Zhang C, Ding H, Lu Y, Ma H, Zhang B (2023)
+     Infrared-triggered camera-trapping survey of wild mammals and birds in Wanfoshan
+     Provincial Nature Reserve, Anhui Province. Journal of Anhui University (Natural Science
+     Edition) 47 (4): 100‑108. [In Chinese]. https://doi.org/10.3969/j.issn.
+     1000-2162.2023.04.012
+            Camera trap survey of mammal diversity and activity rhythms of threatened ...         17
+
+
+
+ •      Yang P, Li W, Crofoot MC, Chakravarty P, Wang X, Zhang T, Li JH (2025) Ecological and
+        social pressures influence diel activity patterns in wild Tibetan macaques. American
+        Journal of Primatology 87 (3): e70016. https://doi.org/10.1002/ajp.70016
+ •      Yuan B, Kong F (2011) Research on mammal activity rhythm. Journal of Anhui
+        Agricultural Sciences 39 (2): 1056‑1058, 1622. [In Chinese]. https://doi.org/10.3969/j.issn.
+        0517-6611.2011.02.161
+ •      Zhang S, Bao Y, Wang Y, Fang P, Ye B (2012) Activity rhythms of black muntjac (
+        Muntiacus crinifrons) revealed with infrared camera. Acta Theriologica Sinica 32 (4):
+        368‑372. [In Chinese]. https://doi.org/10.16829/j.slxb.2012.04.014
+ •      Zhao W, Chen J (2025) Camera trap survey of mammal diversity in a subtropical forest of
+        Huangshan Mountain, China. Version 1.4. Sampling event dataset. Chinese Academy of
+        Sciences (CAS). URL: https://doi.org/10.15468/94t4wd
+ •      Zhou J, Li W, Wang X, Li J (2022) Seasonal change in activity rhythms and time budgets
+        of Tibetan macaques. Biology 11 (9): 1260. https://doi.org/10.3390/biology11091260
+ •      Zhou L, Wan Y, Hong X, Zhang H, Qian L, Wang C, Kong Z, Zhao K, Li J, Zhang B (2018)
+        Camera-trapping surveys of the large and medium-sized mammal and understory bird
+        diversity in Yaoluoping National Nature Reserve, Anhui Province. Biodiversity Science
+        26 (12): 1338‑1342. [In Chinese]. https://doi.org/10.17520/biods.2018166
+ •      Zhu DT (2022) Study on mammal biodiversity in Anhui Guniujiang National Nature
+        Reserve. Anhui Forestry Science and Technology 48 (1): 10‑14. [In Chinese]. https://
+        doi.org/10.3969/j.issn.2095-0152.2022.01.004
+
+
+
+Supplementary materials
+
+Suppl. material 1: List of mammal species
+
+     Authors: Wei Zhao
+     Data type: Table
+     Brief description: List of mammal species recorded at the Jiulongfeng Nature Reserve,
+     Huangshan of Anhui Province.
+     Download file (270.80 kb)
+
+
+Suppl. material 2: Differences in the number of detections
+
+     Authors: Wei Zhao
+     Data type: Table
+     Brief description: Differences in the number of detections across months and differences in
+     altitude selection across seasons for the seven threatened species.
+     Download file (12.28 kb)
+

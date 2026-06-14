@@ -3,3 +3,12 @@
 node_modules/
 dist/
 .DS_Store
+
+# DuckDB 数据库文件（可由 09_analysis/scripts/ 重建；仓库只存 SQL+R+CSV）
+*.duckdb
+*.duckdb.wal
+# R / 临时
+.Rhistory
+.Rapp.history
+.RData
+*.Rproj.user/
