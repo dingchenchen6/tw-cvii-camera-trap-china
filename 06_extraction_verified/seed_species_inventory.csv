@@ -14,20 +14,20 @@ SRC000001,STU000001,SITE000001,Rhesus Macaque,猕猴,Macaca mulatta,Macaca mulat
 SRC000001,STU000001,SITE000001,Tibetan Macaque,藏酋猴,Macaca thibetana huangshanensis,Macaca thibetana,species,Mammalia,Primates,Cercopithecidae,yes,797,797,10.01,10.01,NT,Class II,Table 1; p11,verified
 SRC000001,STU000001,SITE000001,Pallas's Squirrel,赤腹松鼠,Callosciurus erythraeus,Callosciurus erythraeus,species,Mammalia,Rodentia,Sciuridae,yes,1,1,0.01,0.01,LC,none,Table 1; p11,verified
 SRC000001,STU000001,SITE000001,Malayan Porcupine,豪猪,Hystrix brachyura,Hystrix brachyura,species,Mammalia,Rodentia,Hystricidae,yes,497,497,6.24,6.24,LC,none,Table 1; p11,verified
-SRC000002,STU000002,SITE000002,Tiger,虎,Panthera tigris,Panthera tigris,species,Mammalia,Carnivora,Felidae,yes,NR,NR,NR,NR,CR,Class I,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Snow Leopard,雪豹,Panthera uncia,Panthera uncia,species,Mammalia,Carnivora,Felidae,yes,NR,NR,NR,NR,VU,Class I,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Clouded Leopard,云豹,Neofelis nebulosa,Neofelis nebulosa,species,Mammalia,Carnivora,Felidae,yes,NR,NR,NR,NR,VU,Class I,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Leopard,豹,Panthera pardus,Panthera pardus,species,Mammalia,Carnivora,Felidae,yes,NR,NR,NR,NR,VU,Class I,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Leopard Cat,豹猫,Prionailurus bengalensis,Prionailurus bengalensis,species,Mammalia,Carnivora,Felidae,yes,NR,NR,NR,NR,LC,Class II,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Dhole,豺,Cuon alpinus,Cuon alpinus,species,Mammalia,Carnivora,Canidae,yes,NR,NR,NR,NR,EN,Class I,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Asiatic Black Bear,黑熊,Ursus thibetanus,Ursus thibetanus,species,Mammalia,Carnivora,Ursidae,yes,NR,NR,NR,NR,VU,Class II,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Yellow-throated Marten,青鼬,Martes flavigula,Martes flavigula,species,Mammalia,Carnivora,Mustelidae,yes,NR,NR,NR,NR,LC,Class II,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Hog Badger,猪獾,Arctonyx collaris,Arctonyx collaris,species,Mammalia,Carnivora,Mustelidae,yes,NR,NR,NR,NR,VU,none,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Masked Palm Civet,果子狸,Paguma larvata,Paguma larvata,species,Mammalia,Carnivora,Viverridae,yes,NR,NR,NR,NR,LC,none,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Red Muntjac,赤麂,Muntiacus vaginalis,Muntiacus vaginalis,species,Mammalia,Artiodactyla,Cervidae,yes,NR,NR,NR,NR,LC,none,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Wild Boar,野猪,Sus scrofa,Sus scrofa,species,Mammalia,Artiodactyla,Suidae,yes,NR,NR,NR,NR,LC,none,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Serow,中华鬣羚,Capricornis sumatraensis,Capricornis sumatraensis,species,Mammalia,Artiodactyla,Bovidae,yes,NR,NR,NR,NR,VU,Class II,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Goral,斑羚,Naemorhedus sp.,Naemorhedus griseus,species,Mammalia,Artiodactyla,Bovidae,yes,NR,NR,NR,NR,VU,Class II,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Musk Deer,林麝,Moschus sp.,Moschus berezovskii,species,Mammalia,Artiodactyla,Moschidae,yes,NR,NR,NR,NR,EN,Class I,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Assamese Macaque,熊猴,Macaca assamensis,Macaca assamensis,species,Mammalia,Primates,Cercopithecidae,yes,NR,NR,NR,NR,NT,Class II,Table 1; source-data files,verified
-SRC000002,STU000002,SITE000002,Malayan Porcupine,豪猪,Hystrix brachyura,Hystrix brachyura,species,Mammalia,Rodentia,Hystricidae,yes,NR,NR,NR,NR,LC,none,Table 1; source-data files,verified
+SRC000002,STU000002,SITE000002,Asiatic black bear,黑熊,Ursus thibetanus,Ursus thibetanus,species,Mammalia,,,yes,1109,1109,NR,2.57,VU,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Bengal tiger,孟加拉虎,Panthera tigris tigris,Panthera tigris tigris,species,Mammalia,,,yes,57,57,NR,0.13,EN,Class I,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Clouded leopard,云豹,Neofelis nebulosa,Neofelis nebulosa,species,Mammalia,,,yes,99,99,NR,0.23,VU,Class I,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Dhole,豺,Cuon alpinus,Cuon alpinus,species,Mammalia,,,yes,223,223,NR,0.52,VU,Class I,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Golden cat,金猫,Catopuma temminckii,Catopuma temminckii,species,Mammalia,,,yes,494,494,NR,1.14,VU,Class I,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Large Indian civet,大灵猫,Viverra zibetha,Viverra zibetha,species,Mammalia,,,yes,174,174,NR,0.4,CR,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Leopard,金钱豹,Panthera pardus,Panthera pardus,species,Mammalia,,,yes,30,30,NR,0.07,VU,Class I,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Leopard cat,豹猫,Prionailurus bengalensis,Prionailurus bengalensis,species,Mammalia,,,yes,1702,1702,NR,3.94,LC,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Masked palm civet,果子狸,Paguma larvata,Paguma larvata,species,Mammalia,,,yes,1289,1289,NR,2.99,LC,none,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Marten spp.,貂属,Martes sp.,Martes sp.,species,Mammalia,,,yes,212,212,NR,0.49,LC,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Red muntjac,赤麂,Muntiacus vaginalis,Muntiacus vaginalis,species,Mammalia,,,yes,1226,1226,NR,2.84,LC,none,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Sambar deer,水鹿,Rusa unicolor,Rusa unicolor,species,Mammalia,,,yes,470,470,NR,1.09,VU,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Serow,鬣羚,Capricornis sumatraensis,Capricornis sumatraensis,species,Mammalia,,,yes,679,679,NR,1.57,VU,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Wild boar,野猪,Sus scrofa,Sus scrofa,species,Mammalia,,,yes,836,836,NR,1.94,LC,none,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Hog badger,猪獾,Arctonyx collaris,Arctonyx collaris,species,Mammalia,,,yes,157,157,NR,0.36,VU,none,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Himalayan goral,斑羚,Naemorhedus goral,Naemorhedus goral,species,Mammalia,,,yes,128,128,NR,0.3,VU,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Stump-tailed macaque,熊猴,Macaca arctoides,Macaca arctoides,species,Mammalia,,,yes,313,313,NR,0.73,NT,Class II,Table 1; p3,verified
