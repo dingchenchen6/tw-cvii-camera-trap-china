@@ -17,7 +17,12 @@
 3. Zotero 是文献元数据与全文附件的主入口；OneFind 是本地全文知识库检索层。
 4. AI 抽取只是“候选数据生成”，不能直接成为数据库真值。
 5. 原始文献、原始附件、原始抽取表永不覆盖；清洗和标准化必须由脚本生成。
-6. 红外相机核心字段必须优先保障：研究地点、面积、相机数量、相机位点、监测时段、监测时长、相机工作日、有效照片/视频、独立有效记录、物种名录、相对多度/多度/丰度指标、占域/密度/活动节律、人为干扰记录。
+6. 红外相机核心字段必须优先保障，按四类记忆：
+   - **文献溯源信息**：标题（原文+英译）、作者、发表年、期刊/报告/数据集来源、文献类型、DOI/URL、语言、Zotero item key、首次检索批次、全文与附录状态。
+   - **精确时间**：研究起止日期、相机布设起止（deployment_start/end）、季节、监测时段、监测时长、相机工作日、有效夜数、独立记录的时间戳与活动节律。
+   - **空间与地点**：经纬度（WGS84）、坐标精度与不确定性、省/市/县/乡镇、保护区/国家公园名及类型、生态红线状态、海拔、生境、调查面积（与保护区总面积分开）。
+   - **生态指标**：相机数量、相机位点、有效照片/视频、独立有效记录、物种名录（中文名+学名）、相对多度/多度/丰度（RAI）、占域/密度/活动节律、人为干扰记录。
+   其中**经纬度、文献溯源信息、精确时间**属于“即便文献只给汇总值也要尽量还原或标注精度”的高优先字段，缺失时必须用缺失码（NR/UNK/centroid 等）显式记录，不得静默留空。
 7. 附录、补充表、图中表格、地图、物种清单图片和 PDF 扫描件必须纳入抽取范围。
 8. 任何“未记录”“未报告”“无法判断”“不适用”必须用标准缺失码区分。
 
@@ -36,6 +41,8 @@
 ---
 
 ## 1. 项目目录结构
+
+> 说明：本目录结构为整个项目的唯一结构规范，`camera_trap_database_schema_predicts_divert_twcvii.md` 第 9 节“抽取优先级”中引用的 `08_database/`、`07_cleaning/` 等路径即指此处的同名文件夹，两份文档共用同一套目录。
 
 建议在项目根目录建立如下结构：
 
@@ -79,9 +86,10 @@
   metric_definitions.csv
 08_database/
   schema.md
-  camera_trap_v0_raw.duckdb
-  camera_trap_v1_clean.duckdb
+  camera_trap_v0_raw_ingest.duckdb
+  camera_trap_v1_cleaned_core.duckdb
   camera_trap_v2_analysis_ready.duckdb
+  camera_trap_v3_manuscript_freeze.duckdb
 09_analysis/
   scripts/
   notebooks/
@@ -875,25 +883,9 @@ camera_days = 文献总相机工作日
 
 ### 9.11 Proposal 最低可执行字段
 
-若目标是执行 TW-CVII 主分析，每条 `species x spatial_unit x baseline_scenario` 至少需要：
+> 权威定义见 `camera_trap_database_schema_predicts_divert_twcvii.md` 第 8 节，此处不再重复字段列表，以免两份文档不同步。下文为简化说明。
 
-```text
-species_id
-spatial_unit_id
-historically_expected
-historical_confidence
-contemporary_detected
-latest_detection_year
-survey_adequacy_status
-evidence_state
-china_redlist_category
-threat_weight
-functional_group
-functional_weight
-camera_days or adequacy_score
-site/protected area/province coordinates
-source provenance
-```
+若目标是执行 TW-CVII 主分析，每条 `species_id × spatial_unit_id × baseline_scenario` 至少需要：物种身份与空间单元、历史预期状态及置信度、当代探测及最近探测年份、调查充分性、证据状态、中国红色名录类别及威胁权重、功能类群及功能权重、相机工作日或充分性评分、地点/保护地/省坐标、来源溯源信息（完整字段清单见上述 schema 第 8 节）。
 
 缺少上述字段时，该记录只能进入覆盖缺口、文献编目或方法参考分析，不能进入主 TW-CVII 指数计算。
 
@@ -1044,13 +1036,19 @@ RAI = independent_records / camera_days * 100
 
 ## 13. 数据库发布版本
 
+数据库发布版本与 TW-CVII proposal 一致，采用 **4 个版本**，命名与 `camera_trap_database_schema_predicts_divert_twcvii.md` 第 7 节统一：
+
 | 版本 | 内容 | 可用于分析 |
 |---|---|---|
-| v0_raw | 原始导入、AI 候选抽取、未清洗 | 否 |
-| v1_verified | 人工核验后的抽取表 | 部分 |
-| v2_clean | 标准化字段、缺失码、单位转换、分类学清洗 | 是 |
-| v3_analysis_ready | 加入派生指标、空间 join、Red List/traits/environment | 是 |
-| v4_manuscript_freeze | 论文提交版冻结数据库 | 是，需引用版本 |
+| v0_raw_ingest | 原始导入、AI 候选抽取、未清洗 | 否 |
+| v1_cleaned_core | 人工核验后的抽取表；标准化字段、缺失码、单位转换、分类学清洗、外键可连接 | 部分（覆盖缺口、文献编目） |
+| v2_analysis_ready | 加入派生指标、空间 join、Red List/traits/environment、evidence_state、survey_adequacy | 是 |
+| v3_manuscript_freeze | 论文提交版冻结数据库，配校验和与质量报告 | 是，论文必须引用此版本 |
+
+说明：
+
+- 早期草稿中的 `v0_raw / v1_verified / v2_clean / v3_analysis_ready / v4_manuscript_freeze`（5 版）已废弃，统一为上表 4 版，避免与 proposal 冲突。
+- 人工核验与清洗合入 `v1_cleaned_core`，不再单列 `v1_verified` 与 `v2_clean` 两步，但核验与清洗仍在 Gate 4/Gate 5 分别把关。
 
 每次发布必须包含：
 
@@ -1117,7 +1115,7 @@ qa_report
 
 通过条件：
 
-- v3_analysis_ready 数据库生成。
+- `v2_analysis_ready` 数据库生成（论文提交时进一步冻结为 `v3_manuscript_freeze`）。
 - 表记录数和校验和输出。
 - 数据质量报告输出。
 - 重大 unresolved issue 为 0 或有明确限制说明。
@@ -1138,6 +1136,36 @@ qa_report
 8. 人类/家畜/犬干扰记录矩阵。
 9. 数据缺失热图。
 10. 适合 TW-CVII 的 analysis-ready 子集。
+
+### 15.1 区分 silent range 与 monitoring gap 的量化阈值
+
+区分 silent range 与 monitoring gap 是 TW-CVII 的概念核心，抽取和清洗时必须保留足够信息支撑以下判定（源自 proposal §6.2，临时最低值来自累计探测概率曲线）：
+
+| 类群 | 临时最低相机工作日 | 临时最低相机位点数 | 其他要求 |
+|---|---:|---:|---|
+| 中型食肉动物 mesocarnivores | ≥ 1,000 | ≥ 15 | 跨季节 |
+| 大型食肉动物 large carnivores | ≥ 5,000 | ≥ 30 | 跨 ≥ 12 个月 |
+| 中型有蹄类、地栖鸟类 | ≥ 600–800 | ≥ 10–12 | — |
+
+- 抽取 `deployment` 表时务必保留可派生这些阈值的字段（`camera_days`、`station_count`、季节、跨年信息），不可在清洗阶段丢失。
+- 类群阈值将基于物种累积曲线和探测频率曲线经验校正；敏感性分析检验 silent-range 图对替代阈值的稳健性。
+- 在调查不充分的空间单元不得生成 silent_range（schema §10 第 7 条），只能记为 monitoring_gap 或 PENDING。
+
+### 15.2 红色名录权重与 DD 物种处理
+
+抽取 `conservation_status` 与 `functional_traits` 时须按下列规则保留权重依据：
+
+- 主权重序列采用几何级数（近似 ~50 年灭绝概率，与 EDGE / RLI 传统一致）：`LC = 1, NT = 2, VU = 4, EN = 8, CR = 16`。
+- **DD 物种不进入 TW-CVII 主分母**，而作为独立的“知识赤字覆盖指数（Data-Deficiency Coverage Index）”分析层——数据缺乏本身是保护关注，不能默认低风险。
+- 备选权重方案（线性 1–5、二次 1/4/9/16/25、基于文献灭绝风险先验的贝叶斯权重）须做敏感性分析，因此抽取时保留 `china_redlist_category` 原值，不预先归并。
+
+### 15.3 气候位移过滤分类器
+
+为区分气候驱动的范围重新定位与人为去动物化，证据状态判定须接入气候位移过滤（proposal §6.5，参考 Chen et al. 2011, Science）：
+
+- 使用 1950s–2020s 气候常态，判断空间单元的气候包络是否已移出某物种的历史热生态位。
+- 若 silent_range 落在气候包络已显著漂移的空间单元，标记为 `climate_explainable`，与人为去动物化区分。
+- 因此 `environmental_covariates` 表须保留可重建气候包络的协变量（温度、降水等）及其年份与分辨率。
 
 ---
 
@@ -1183,26 +1211,45 @@ Use $camera-trap-database-workflow to check whether RAI, camera-days and survey 
 ## 18. 每篇文献抽取检查清单
 
 ```text
-[ ] Zotero item exists
-[ ] DOI/URL checked
+# 文献溯源信息（必填，缺失须记原因）
+[ ] Zotero item exists + zotero_item_key recorded
+[ ] 标题原文 + 英译题名（如有）
+[ ] 作者、发表年、期刊/报告来源、文献类型
+[ ] DOI/URL checked（缺失须记 NR）
+[ ] 语言（zh/en/mixed）
 [ ] PDF/CAJ downloaded or missing reason recorded
 [ ] Supplementary materials checked
 [ ] Abstract screened
 [ ] Full text screened
-[ ] Study area extracted
-[ ] Province/county/protected area extracted
-[ ] Coordinates/elevation/habitat extracted if available
-[ ] Survey period extracted
-[ ] Camera count extracted
-[ ] Camera station count extracted
-[ ] Camera-days / trap nights extracted
-[ ] Monitoring duration extracted
-[ ] Independent-event definition extracted
-[ ] Species list extracted
-[ ] Chinese names and scientific names extracted
-[ ] Independent records / photos / videos extracted
-[ ] RAI / abundance / density / occupancy extracted if available
-[ ] Human/livestock/dog records extracted
+
+# 精确时间（必填，精度须标注）
+[ ] 研究起止日期 study_start/end（ISO，精度 day/month/year）
+[ ] 相机布设起止 deployment_start/end
+[ ] 季节 season
+[ ] 监测时段、监测时长
+[ ] 相机工作日 camera_days（原文值；若派生须标 derived）
+[ ] 有效夜数 / 故障天数（如有）
+[ ] 独立记录定义（30/60 min）及时间戳/活动节律（如有）
+
+# 空间与地点（必填，坐标缺失须标精度码）
+[ ] 经纬度 latitude/longitude（WGS84）
+[ ] 坐标精度 coordinate_precision（exact/centroid/county/unknown）+ 不确定性
+[ ] 省 / 市/州 / 县 / 乡镇
+[ ] 保护区/国家公园名 + 类型 + 生态红线状态
+[ ] 海拔（min/max/mean）
+[ ] 生境（原文 + 标准）
+[ ] 调查面积 survey_area_km2（与保护区总面积分开）
+
+# 生态指标
+[ ] 相机数量、相机位点数
+[ ] 有效照片/视频
+[ ] 独立有效记录
+[ ] 物种名录（中文名 + 学名 + 类群）
+[ ] RAI / 多度 / 丰度（记录原文公式与分母）
+[ ] 占域 / 密度 / 活动节律（如有）
+[ ] 人为/家畜/犬干扰记录
+
+# 收尾
 [ ] Appendix tables extracted
 [ ] All high-impact fields page-referenced
 [ ] Human verification complete

@@ -1,1 +1,2 @@
-export_id,search_id,database_or_source,export_date,export_format,export_file,record_count,imported_to_zotero,zotero_collection,notes
+export_id,search_id,database,export_format,export_file,export_date,record_count,imported_to_zotero,import_count_diff,notes
+EXP000001,SEARCH000001,journal_website_seed,manual_pdf,03_full_text/pdf_manifest.csv,2026-06-14,1,no,NA,Qingliangfeng seed record used to test PDF intake and extraction workflow.

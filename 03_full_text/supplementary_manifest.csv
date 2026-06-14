@@ -1,2 +1,2 @@
-supplement_id,source_id,file_name,file_path,url,download_date,file_type,supplement_type,contains_species_list,contains_deployment_data,contains_metrics,extraction_status,notes
-SUPP000001,SRC000001,Appendix 1 referenced in text,PENDING,PENDING,PENDING,appendix,species_list,yes,unknown,unknown,needs_check,PDF text references 附录 1 but appendix content was not found by text search.
+supplement_id,source_id,zotero_item_key,supplement_type,filename,source_url,table_or_sheet_names,contains_species_inventory,contains_camera_effort,contains_raw_records,contains_coordinates,contains_environment,extraction_priority,checksum_sha256,notes
+SUPP000001,SRC000001,PENDING_ZOTERO,appendix_species_list,Appendix 1 referenced in text,PENDING,PENDING,yes,unknown,unknown,unknown,unknown,high,PENDING,PDF text references 附录 1 but appendix content was not found by text search; inspect journal HTML and supplementary links.

@@ -1,38 +1,26 @@
-# 红外相机文献系统检索策略
+# 文献检索策略 (Search Strategy)
 
-版本：2026-06-14  
-目标：全面检索中国红外相机相关文献、报告、数据集、附录和补充材料，用于 TW-CVII 标准化数据库建设。
+> 本文件是检索的执行计划。完整关键词矩阵、检索式、检索轮次定义见 `../camera_trap_literature_to_database_workflow.md` 第 3–5 节（单一真源）；本文件记录本批次执行状态，并附可直接复制到数据库平台的查询库。
 
-## 1. 数据库范围
+## 检索轮次（R1–R8）
 
-必须覆盖：
+| 轮次 | 目的 | 中文核心词 | 英文核心词 | 状态 | 负责人 | 备注 |
+|---|---|---|---|---|---|---|
+| R1 广泛召回 | 最大化红外相机相关文献 | 红外相机、自动相机、相机陷阱、红外触发相机 | camera trap, camera-trap, camera trapping, infrared camera, automatic camera | ⬜ 未开始 | | |
+| R2 物种编目 | 物种清单、鸟兽资源、兽类多样性 | 物种多样性、物种组成、物种编目、鸟兽资源 | species inventory, species richness, mammal diversity, bird diversity | ⬜ 未开始 | | |
+| R3 丰度/多度 | RAI、多度、相对丰度、活动强度 | 相对多度、相对多度指数、多度、丰度、独立有效照片 | relative abundance index, RAI, abundance, independent events | ⬜ 未开始 | | |
+| R4 方法与努力量 | 相机数量、相机工作日、监测时长 | 相机工作日、有效相机日、监测时长、相机数量、位点数、网格 | camera days, trap nights, sampling effort, camera stations, deployment, grid | ⬜ 未开始 | | |
+| R5 空间对象 | 保护区、国家公园、山系、县域 | 自然保护区、国家公园、保护地、森林公园、省名 | nature reserve, national park, protected area, reserve, China | ⬜ 未开始 | | |
+| R6 目标类群/干扰 | 兽类、地栖鸟类、食肉动物、家畜干扰 | 人为干扰、放牧、家畜、狗、猫、道路、盗猎 | human disturbance, livestock, dog, road, poaching, tourism | ⬜ 未开始 | | |
+| R7 方法模型 | 占域、密度、活动节律、探测概率 | 占域、密度、活动节律、时空分布、探测概率 | occupancy, density, activity pattern, detection probability | ⬜ 未开始 | | |
+| R8 追踪补漏 | 被引、参考文献、同作者、同区域 | 同一保护区、同一作者、参考文献、被引文献、补充材料 | cited references, citing articles, same site, same author, supplementary | ⬜ 未开始 | | |
 
-- Web of Science Core Collection
-- CNKI / 中国知网
-- 万方
-- 维普
-- Google Scholar
-- Biodiversity Science / 生物多样性
-- 兽类学报
-- 浙江林业科技、四川动物、动物学杂志、生态学报、应用生态学报、生物多样性等中文期刊网站
-- 保护区、国家公园、林草局、生态环境部、科研院所、高校报告
-- 参考文献追踪和被引追踪
-- 数据仓储：GBIF、Zenodo、Figshare、Dryad、DataOne、期刊 supplementary data
+## 执行记录
 
-## 2. 检索轮次
+每完成一轮检索，向 `search_log.csv` 追加一行，并把导出文件放 `query_snapshots/`。
+命名规则：`YYYYMMDD_database_query_round.csv`（如 `20260614_cnki_R1.csv`）。
 
-| 轮次 | 目的 | 中文核心词 | 英文核心词 |
-|---|---|---|---|
-| R1 | 广义召回 | 红外相机、自动相机、相机陷阱、红外触发相机 | camera trap, camera-trap, camera trapping, infrared camera, automatic camera |
-| R2 | 物种编目 | 物种多样性、物种组成、物种编目、鸟兽资源、兽类资源、鸟类资源 | species inventory, species richness, mammal diversity, bird diversity, vertebrate diversity |
-| R3 | 丰度/RAI | 相对多度、相对多度指数、多度、丰度、独立有效照片 | relative abundance index, RAI, abundance, independent events |
-| R4 | 采样努力量 | 相机工作日、有效相机日、监测时长、调查时间、相机数量、位点数、样区、网格 | camera days, trap nights, sampling effort, camera stations, deployment, grid |
-| R5 | 地点/保护地 | 自然保护区、国家公园、保护地、森林公园、湿地、山系、省名 | nature reserve, national park, protected area, reserve, China |
-| R6 | 干扰 | 人为干扰、放牧、家畜、狗、猫、道路、盗猎、旅游 | human disturbance, livestock, cattle, goat, dog, road, poaching, tourism |
-| R7 | 方法/模型 | 占域、密度、活动节律、时空分布、MaxEnt、occupancy | occupancy, density, activity pattern, temporal activity, detection probability |
-| R8 | 追踪 | 同一保护区、同一作者、参考文献、被引文献、补充材料 | cited references, citing articles, same site, same author, supplementary |
-
-## 3. 中文检索式示例
+## 中文检索式示例
 
 ```text
 ("红外相机" OR "自动相机" OR "相机陷阱" OR "红外触发相机")
@@ -65,7 +53,7 @@ AND ("兽类" OR "鸟类" OR "鸟兽")
 AND ("人为干扰" OR "放牧" OR "家畜" OR "狗" OR "道路" OR "盗猎" OR "旅游")
 ```
 
-## 4. English Query Examples
+## English Query Examples
 
 ```text
 TS=("camera trap*" OR "camera-trap*" OR "camera trapping" OR "infrared camera*" OR "automatic camera*")
@@ -90,25 +78,9 @@ AND TS=("human disturbance" OR livestock OR cattle OR goat OR dog OR road OR poa
 AND TS=(China OR "protected area" OR "nature reserve")
 ```
 
-## 5. 导出规范
+## 导出规范
 
-每次检索必须写入 `01_search/search_log.csv`：
-
-- `search_id`
-- `date`
-- `database_or_source`
-- `platform_access`
-- `query_round`
-- `query`
-- `query_language`
-- `result_count_observed`
-- `records_exported`
-- `export_file`
-- `deduplicated_count`
-- `status`
-- `notes`
-
-导出文件登记到 `01_search/database_export_manifest.csv`。
+每次检索必须写入 `01_search/search_log.csv`；数据库导出登记到 `01_search/database_export_manifest.csv`。
 
 推荐导出格式：
 
@@ -118,38 +90,11 @@ AND TS=(China OR "protected area" OR "nature reserve")
 - Google Scholar：逐条 BibTeX，需记录搜索页码和日期
 - 期刊网站：Zotero Connector 保存 landing page；PDF 和 supplementary 单独登记
 
-## 6. 下载规范
+## 完成定义（Gate 1 通过条件）
 
-下载文件登记到：
-
-- `03_full_text/pdf_manifest.csv`
-- `03_full_text/supplementary_manifest.csv`
-- `03_full_text/no_full_text_reason.csv`
-
-命名规则：
-
-```text
-SRC000001_author_site_year.pdf
-SRC000001_appendix_table_S1_species_inventory.xlsx
-SRC000001_text_extract.txt
-```
-
-下载必须记录：
-
-- URL 或数据库来源
-- 下载日期
-- 文件类型
-- SHA256
-- OCR 状态
-- 文本提取路径
-- 版权/访问说明
-
-## 7. 追踪检索
-
-每篇 included 文献必须完成：
-
-1. 检查参考文献中同一保护区、同一作者、同一物种编目相关文献。
-2. 检查被引文献。
-3. 搜索同一保护区名 + 红外相机。
-4. 搜索同一 DOI、题名、作者的 supplementary。
-5. 搜索同一保护区历史兽类/鸟类记录，用于 `historical_expectation`。
+- [ ] R1–R8 全部完成
+- [ ] Web of Science、CNKI、万方、维普、Google Scholar 和核心期刊站点均有检索记录
+- [ ] 每个数据库有检索式和结果数（见 `search_log.csv`）
+- [ ] 核心综述已做前向/后向追踪（见 `citation_chasing_log.csv`）
+- [ ] 中文和英文关键词都用过
+- [ ] included 文献的 DOI/URL、Zotero key、PDF/full-text status、supplement status 均已登记

@@ -1,2 +1,2 @@
-source_id,screening_stage,decision,decision_date,reviewer,exclusion_reason,include_for,notes
-SRC000001,full_text,include_candidate,2026-06-14,Codex,NA,species_inventory; camera_days; RAI; disturbance; protected_area_case,Candidate only; high-impact fields require human verification.
+source_id,zotero_item_key,screen_stage,decision,exclusion_reason,extraction_priority,decided_by,decision_date,notes
+SRC000001,PENDING_ZOTERO,full_text,include_candidate,NA,high,Codex,2026-06-14,Includes camera-days, station count, site areas, species inventory, RAI and disturbance; high-impact fields require human verification.

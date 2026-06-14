@@ -1,2 +1,2 @@
-batch_id,date,input_file_id,source_id,extractor,tool_or_model,prompt_version,output_folder,status,notes
-BATCH000001,2026-06-14,FILE000001,SRC000001,Codex,pdftotext + manual visual check,seed_v0,08_database/templates,candidate_extracted,Values extracted from PDF text and rendered pages; not human-verified.
+batch_id,batch_date,extractor,extractor_type,sources_in_batch,model_or_tool,prompt_version,notes
+BATCH000001,2026-06-14,Codex,ai_candidate,SRC000001,pdftotext + visual page check + structured seed loader,seed_v0,Qingliangfeng seed values are candidate only; appendix and Zotero item key remain unresolved.

@@ -1,0 +1,3 @@
+source_id,study_id,site_id,species_original,chinese_name,scientific_name_original,scientific_name_accepted,taxon_rank,class,order,family,detection_confirmed,independent_records,valid_photos,valid_videos,individual_count,rai_original,rai_per_100_camera_days,china_redlist_category,extraction_page
+# SAMPLE — delete before real use,,,,,,,,,,,,,,,,,,,,,
+SRC000142,STU000142,SITE000142,大熊猫,大熊猫,Ailuropoda melanoleuca,Ailuropoda melanoleuca,species,Mammalia,Carnivora,Ursidae,yes,12,45,0,8,1.20,NR,VU,Appendix Table S2

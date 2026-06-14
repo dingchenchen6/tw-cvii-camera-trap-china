@@ -1,0 +1,48 @@
+source_id,study_id,site_id,species_original,chinese_name,scientific_name_original,scientific_name_accepted,taxon_rank,class,order,family,detection_confirmed,independent_records,valid_photos,rai_original,rai_per_100_camera_days,china_redlist_category,national_protection_class,extraction_page,verification_status
+SRC000001,STU000001,SITE000001,Chinese Hare,华南兔,Lepus sinensis,Lepus sinensis,species,Mammalia,Lagomorpha,Leporidae,yes,24,24,0.30,0.30,LC,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Yellow-throated Marten,青鼬,Martes flavigula,Martes flavigula,species,Mammalia,Carnivora,Mustelidae,yes,49,49,0.62,0.62,LC,Class II,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Siberian Weasel,黄鼬,Mustela sibirica,Mustela sibirica,species,Mammalia,Carnivora,Mustelidae,yes,4,4,0.05,0.05,LC,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,European Badger,狗獾,Meles meles,Meles meles,species,Mammalia,Carnivora,Mustelidae,yes,6,6,0.08,0.08,LC,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Hog Badger,猪獾,Arctonyx collaris,Arctonyx collaris,species,Mammalia,Carnivora,Mustelidae,yes,377,377,4.73,4.73,VU,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Masked Palm Civet,果子狸,Paguma larvata,Paguma larvata,species,Mammalia,Carnivora,Viverridae,yes,515,515,6.47,6.47,LC,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Crab-eating Mongoose,食蟹獴,Urva urva,Urva urva,species,Mammalia,Carnivora,Herpestidae,yes,19,19,0.24,0.24,LC,none,Table 1; p9,verified
+SRC000001,STU000001,SITE000001,Wild Boar,野猪,Sus scrofa,Sus scrofa,species,Mammalia,Artiodactyla,Suidae,yes,1420,1420,17.83,17.83,LC,none,Table 1; p10,verified
+SRC000001,STU000001,SITE000001,Reeves's Muntjac,小麂,Muntiacus reevesi,Muntiacus reevesi,species,Mammalia,Artiodactyla,Cervidae,yes,3480,3480,43.70,43.70,LC,none,Table 1; p10,verified
+SRC000001,STU000001,SITE000001,Black Muntjac,黑麂,Muntiacus crinifrons,Muntiacus crinifrons,species,Mammalia,Artiodactyla,Cervidae,yes,318,318,3.99,3.99,VU,Class I,Table 1; p10,verified
+SRC000001,STU000001,SITE000001,Serow,中华鬣羚,Capricornis sumatraensis,Capricornis sumatraensis,species,Mammalia,Artiodactyla,Bovidae,yes,113,113,1.42,1.42,VU,Class II,Table 1; p10,verified
+SRC000001,STU000001,SITE000001,Rhesus Macaque,猕猴,Macaca mulatta,Macaca mulatta,species,Mammalia,Primates,Cercopithecidae,yes,5,5,0.06,0.06,LC,Class II,Table 1; p11,verified
+SRC000001,STU000001,SITE000001,Tibetan Macaque,藏酋猴,Macaca thibetana huangshanensis,Macaca thibetana,species,Mammalia,Primates,Cercopithecidae,yes,797,797,10.01,10.01,NT,Class II,Table 1; p11,verified
+SRC000001,STU000001,SITE000001,Pallas's Squirrel,赤腹松鼠,Callosciurus erythraeus,Callosciurus erythraeus,species,Mammalia,Rodentia,Sciuridae,yes,1,1,0.01,0.01,LC,none,Table 1; p11,verified
+SRC000001,STU000001,SITE000001,Malayan Porcupine,豪猪,Hystrix brachyura,Hystrix brachyura,species,Mammalia,Rodentia,Hystricidae,yes,497,497,6.24,6.24,LC,none,Table 1; p11,verified
+SRC000002,STU000002,SITE000002,Asiatic black bear,黑熊,Ursus thibetanus,Ursus thibetanus,species,Mammalia,,,yes,1109,1109,NR,2.57,VU,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Bengal tiger,孟加拉虎,Panthera tigris tigris,Panthera tigris tigris,species,Mammalia,,,yes,57,57,NR,0.13,EN,Class I,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Clouded leopard,云豹,Neofelis nebulosa,Neofelis nebulosa,species,Mammalia,,,yes,99,99,NR,0.23,VU,Class I,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Dhole,豺,Cuon alpinus,Cuon alpinus,species,Mammalia,,,yes,223,223,NR,0.52,VU,Class I,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Golden cat,金猫,Catopuma temminckii,Catopuma temminckii,species,Mammalia,,,yes,494,494,NR,1.14,VU,Class I,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Large Indian civet,大灵猫,Viverra zibetha,Viverra zibetha,species,Mammalia,,,yes,174,174,NR,0.4,CR,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Leopard,金钱豹,Panthera pardus,Panthera pardus,species,Mammalia,,,yes,30,30,NR,0.07,VU,Class I,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Leopard cat,豹猫,Prionailurus bengalensis,Prionailurus bengalensis,species,Mammalia,,,yes,1702,1702,NR,3.94,LC,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Masked palm civet,果子狸,Paguma larvata,Paguma larvata,species,Mammalia,,,yes,1289,1289,NR,2.99,LC,none,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Marten spp.,貂属,Martes sp.,Martes sp.,species,Mammalia,,,yes,212,212,NR,0.49,LC,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Red muntjac,赤麂,Muntiacus vaginalis,Muntiacus vaginalis,species,Mammalia,,,yes,1226,1226,NR,2.84,LC,none,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Sambar deer,水鹿,Rusa unicolor,Rusa unicolor,species,Mammalia,,,yes,470,470,NR,1.09,VU,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Serow,鬣羚,Capricornis sumatraensis,Capricornis sumatraensis,species,Mammalia,,,yes,679,679,NR,1.57,VU,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Wild boar,野猪,Sus scrofa,Sus scrofa,species,Mammalia,,,yes,836,836,NR,1.94,LC,none,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Hog badger,猪獾,Arctonyx collaris,Arctonyx collaris,species,Mammalia,,,yes,157,157,NR,0.36,VU,none,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Himalayan goral,斑羚,Naemorhedus goral,Naemorhedus goral,species,Mammalia,,,yes,128,128,NR,0.3,VU,Class II,Table 1; p3,verified
+SRC000002,STU000002,SITE000002,Stump-tailed macaque,熊猴,Macaca arctoides,Macaca arctoides,species,Mammalia,,,yes,313,313,NR,0.73,NT,Class II,Table 1; p3,verified
+SRC000003,STU000003,SITE000003,Rhesus monkey,猕猴,Macaca mulatta,Macaca mulatta,species,Mammalia,Primates,Cercopithecidae,yes,84,84,NR,2.02,LC,Class II,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Chinese pangolin,中华穿山甲,Manis pentadactyla,Manis pentadactyla,species,Mammalia,Pholidota,Manidae,yes,12,12,NR,0.29,CR,Class I,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Common palm civet,椰子狸,Paradoxurus hermaphroditus,Paradoxurus hermaphroditus,species,Mammalia,Carnivora,Viverridae,yes,177,177,NR,4.26,EN,Class II,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Mainland leopard cat,豹猫,Prionailurus bengalensis,Prionailurus bengalensis,species,Mammalia,Carnivora,Felidae,yes,69,69,NR,1.66,VU,Class II,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Yellow-bellied weasel,黄腹鼬,Mustela kathiah,Mustela kathiah,species,Mammalia,Carnivora,Mustelidae,yes,1,1,NR,0.02,NT,none,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Small-toothed ferret badger,鼬獾,Melogale moschata,Melogale moschata,species,Mammalia,Carnivora,Mustelidae,yes,604,604,NR,14.53,NT,none,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Hainan muntjac,海南麂,Muntiacus nigripes,Muntiacus nigripes,species,Mammalia,Artiodactyla,Cervidae,yes,1027,1027,NR,24.7,VU,Class II,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Wild boar,野猪,Sus scrofa,Sus scrofa,species,Mammalia,Artiodactyla,Suidae,yes,1148,1148,NR,27.62,LC,none,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Black giant squirrel,巨松鼠,Ratufa bicolor,Ratufa bicolor,species,Mammalia,Rodentia,Sciuridae,yes,NR,NR,NR,NR,EN,Class II,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Red-cheeked squirrel,赤颊松鼠,Dremomys rufigenis,Dremomys rufigenis,species,Mammalia,Rodentia,Sciuridae,yes,NR,NR,NR,NR,LC,none,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Pallas's squirrel,赤腹松鼠,Callosciurus erythraeus,Callosciurus erythraeus,species,Mammalia,Rodentia,Sciuridae,yes,NR,NR,NR,NR,LC,none,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Asiatic brush-tailed porcupine,帚尾豪猪,Atherurus macrourus,Atherurus macrourus,species,Mammalia,Rodentia,Hystricidae,yes,NR,NR,NR,NR,LC,none,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Edward's rat,白腹巨鼠,Leopoldamys edwardsi,Leopoldamys edwardsi,species,Mammalia,Rodentia,Muridae,yes,NR,NR,NR,NR,LC,none,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Indochinese ground squirrel,赤腹松鼠属,Menetes berdmorei,Menetes berdmorei,species,Mammalia,Rodentia,Sciuridae,yes,NR,NR,NR,NR,LC,none,Table 1; p4-5,verified
+SRC000003,STU000003,SITE000003,Hainan flying fox,海南果蝠,Pteropus hypomelanus,Pteropus hypomelanus,species,Mammalia,Chiroptera,Pteropodidae,yes,NR,NR,NR,NR,LC,none,Table 1; p4-5,verified

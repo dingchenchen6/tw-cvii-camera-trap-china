@@ -24,6 +24,16 @@
 - 保护区、国家公园、生态红线、山系、生态区和不同土地利用/管理条件下，威胁加权和功能加权完整性是否不同？
 - 红外相机研究覆盖、相机工作日、物种名录、RAI、占域、密度、活动节律和人为干扰数据的可用性在哪里不足？
 
+### 1.1 跨表必保的高优先信息
+
+为支撑上述问题并保证每条记录可追溯、可定位、可时间分辨，以下三类信息为**跨表高优先字段**，即便文献只给汇总值也要尽量还原或显式标注精度，缺失时必须用缺失码（NR/UNK/centroid 等）记录，不得静默留空：
+
+- **文献溯源信息**（`source` 表）：`source_id`、`zotero_item_key`、`title_original`、`title_english`、`authors`、`year`、`journal_or_source`、`publication_type`、`doi`、`url`、`language`、`database_source`、`full_text_status`、`supplement_status`。保证任何分析结果都能回溯到具体文献、检索批次和全文文件。
+- **精确时间**（`study`、`deployment`、`observation`、`independent_event` 表）：`study_start/end_date`、`deployment_start/end`、`date_precision`、`active_days`、`camera_days`、`valid_nights`、`timestamp`、`event_date`、`event_hour`、`event_diel_period`、`season`。保证监测时段、努力量、活动节律和时间趋势可重建。
+- **空间与地点**（`site`、`protected_area_context` 表）：`latitude`、`longitude`、`coordinate_precision`、`coordinate_uncertainty_m`、`province`、`prefecture`、`county`、`township`、`protected_area_name`、`pa_type`、`ecological_redline_status`、`elevation_min/max/mean_m`、`habitat_type_original/standard`、`survey_area_km2`（须与 `protected_area_total_km2` 分开）。保证空间 join、保护区匹配、制图和经纬度精度评估可用。
+
+经纬度坐标采用 WGS84；只给保护区名时可用 centroid，但必须置 `coordinate_precision = centroid` 并保留不确定性半径。
+
 ---
 
 ## 2. 参照数据库逻辑
@@ -528,7 +538,7 @@ species 1--1/n taxonomy, conservation_status, functional_traits
 |---|---:|---|
 | `expectation_id` | M | 编号 |
 | `species_id` | M | 物种 |
-| `spatial_unit_id` | M | site/grid/protected_area/ecoregion |
+| `spatial_unit_id` | M | 分析空间单元 ID（对应 site/grid/protected_area/ecoregion 的主键） |
 | `spatial_unit_type` | M | site/grid/protected_area/county/ecoregion |
 | `historically_expected` | M | yes/no/uncertain |
 | `historical_source_id` | H | 历史来源 |
@@ -867,6 +877,8 @@ text_only
 
 ## 8. Proposal 最低可执行字段
 
+> 本节是“最低可执行字段”的**权威定义**；`camera_trap_literature_to_database_workflow.md` 第 9.11 节只保留简化说明并指向此处，避免两份文档不同步。字段语义以 TW-CVII proposal 为准。
+
 如果要真正执行 TW-CVII proposal，每条 `species_id x spatial_unit_id x baseline_scenario` 至少要能得到：
 
 ```text
@@ -915,7 +927,9 @@ method_reference
 
 ## 10. 质量门槛
 
-进入 `v3_analysis_ready` 前必须通过：
+> 本节是“analysis-ready 准入细则”，与 `camera_trap_literature_to_database_workflow.md` 第 14 节的 6 个 QA Gate 是互补关系：那 6 个 Gate 是**流程主线**（检索→Zotero→全文→抽取→清洗→冻结），本节 10 条是进入 `v2_analysis_ready` 前的**数据级硬校验**。两者共同构成进入 `v3_manuscript_freeze` 的门槛。
+
+进入 `v2_analysis_ready`（论文提交冻结为 `v3_manuscript_freeze`）前必须通过：
 
 1. 所有 included source 有 Zotero item、全文状态、补充材料状态。
 2. 所有高影响字段有页码/表号/附录来源。
@@ -932,6 +946,7 @@ method_reference
 
 ## 11. 来源与依据
 
+- TW-CVII China proposal（研究真源，包含公式、5 个完整性指数、调查充分性阈值、气候位移过滤分类器、Red List 几何权重序列）: `TW-CVII_China_Proposal_20260613_workflow_optimized.docx`
 - Camtrap DP data resources: https://camtrap-dp.tdwg.org/data/
 - GBIF Best Practices for Managing and Publishing Camera Trap Data: https://docs.gbif.org/camera-trap-guide/en/
 - PREDICTS database paper: https://doi.org/10.1002/ece3.2579
@@ -939,4 +954,7 @@ method_reference
 - DiVert Zenodo dataset record: https://zenodo.org/records/15347789
 - DiVert paper DOI: https://doi.org/10.1111/geb.70261
 - Xiao et al. 2022 中国野生动物红外相机监测与研究: https://www.biodiversity-science.net/CN/10.17520/biods.2022451
+- Chen et al. 2011, Science（气候位移过滤分类器依据）: https://doi.org/10.1126/science.1207524
+
+配套文档：本字段规范与 `camera_trap_literature_to_database_workflow.md`（文献检索到标准化数据库工作流）配套使用，两者共用同一套目录结构和 4 版数据库发布方案（v0_raw_ingest / v1_cleaned_core / v2_analysis_ready / v3_manuscript_freeze）。
 

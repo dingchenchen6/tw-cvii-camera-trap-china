@@ -1,0 +1,59 @@
+scientific_name_accepted,chinese_name_standard,class,order,family,genus,species,china_redlist_category,national_protection_class,trophic_level,body_size_class,functional_group,foraging_stratum,activity_pattern,endemic_status,threat_weight
+Ailuropoda melanoleuca,大熊猫,Mammalia,Carnivora,Ursidae,Ailuropoda,melanoleuca,EN,Class I,herbivore,large,large_herbivore,ground,cathemeral,China endemic,8
+Panthera pardus orientalis,东北豹,Mammalia,Carnivora,Felidae,Panthera,pardus,CR,Class I,carnivore,large,large_carnivore,ground,nocturnal,not endemic,16
+Panthera tigris altaica,东北虎,Mammalia,Carnivora,Felidae,Panthera,tigris,CR,Class I,carnivore,large,large_carnivore,ground,nocturnal,not endemic,16
+Panthera uncia,雪豹,Mammalia,Carnivora,Felidae,Panthera,uncia,VU,Class I,carnivore,large,large_carnivore,ground,crepuscular,not endemic,4
+Neofelis nebulosa,云豹,Mammalia,Carnivora,Felidae,Neofelis,nebulosa,VU,Class I,carnivore,large,large_carnivore,arboreal,nocturnal,not endemic,4
+Catopuma temminckii,金猫,Mammalia,Carnivora,Felidae,Catopuma,temminckii,VU,Class I,carnivore,medium,mesocarnivore,ground,nocturnal,not endemic,4
+Lynx lynx,猞猁,Mammalia,Carnivora,Felidae,Lynx,lynx,VU,Class II,carnivore,medium,mesocarnivore,ground,crepuscular,not endemic,4
+Prionailurus bengalensis,豹猫,Mammalia,Carnivora,Felidae,Prionailurus,bengalensis,LC,Class II,carnivore,small,mesocarnivore,ground,nocturnal,not endemic,1
+Cuon alpinus,豺,Mammalia,Carnivora,Canidae,Cuon,alpinus,VU,Class I,carnivore,medium,large_carnivore,ground,diurnal,not endemic,4
+Ursus thibetanus,黑熊,Mammalia,Carnivora,Ursidae,Ursus,thibetanus,VU,Class II,omnivore,large,large_herbivore,ground,diurnal,not endemic,4
+Martes flavigula,青鼬,Mammalia,Carnivora,Mustelidae,Martes,flavigula,LC,Class II,carnivore,medium,mesocarnivore,arboreal,diurnal,not endemic,1
+Meles leucurus,狗獾,Mammalia,Carnivora,Mustelidae,Meles,leucurus,LC,none,omnivore,medium,mesocarnivore,ground,nocturnal,not endemic,1
+Moschus berezovskii,林麝,Mammalia,Artiodactyla,Moschidae,Moschus,berezovskii,EN,Class I,herbivore,medium,large_herbivore,ground,crepuscular,not endemic,8
+Moschus chrysogaster,马麝,Mammalia,Artiodactyla,Moschidae,Moschus,chrysogaster,EN,Class I,herbivore,medium,large_herbivore,ground,crepuscular,not endemic,8
+Muntiacus reevesi,小麂,Mammalia,Artiodactyla,Cervidae,Muntiacus,reevesi,LC,none,herbivore,medium,large_herbivore,ground,crepuscular,China endemic,1
+Muntiacus vaginalis,赤麂,Mammalia,Artiodactyla,Cervidae,Muntiacus,vaginalis,LC,none,herbivore,medium,large_herbivore,ground,crepuscular,not endemic,1
+Cervus nippon,梅花鹿,Mammalia,Artiodactyla,Cervidae,Cervus,nippon,VU,Class I,herbivore,large,large_herbivore,ground,crepuscular,not endemic,4
+Capreolus pygargus,西伯利亚狍,Mammalia,Artiodactyla,Cervidae,Capreolus,pygargus,LC,none,herbivore,medium,large_herbivore,ground,crepuscular,not endemic,1
+Elaphodus cephalophus,毛冠鹿,Mammalia,Artiodactyla,Cervidae,Elaphodus,cephalophus,VU,Class II,herbivore,medium,large_herbivore,ground,crepuscular,China endemic,4
+Budorcas taxicolor,羚牛,Mammalia,Artiodactyla,Bovidae,Budorcas,taxicolor,VU,Class I,herbivore,large,large_herbivore,ground,crepuscular,not endemic,4
+Naemorhedus griseus,中华鬣羚,Mammalia,Artiodactyla,Bovidae,Naemorhedus,griseus,VU,Class II,herbivore,large,large_herbivore,ground,diurnal,not endemic,4
+Capricornis milneedwardsii,中华斑羚,Mammalia,Artiodactyla,Bovidae,Capricornis,milneedwardsii,VU,Class II,herbivore,medium,large_herbivore,ground,diurnal,not endemic,4
+Sus scrofa,野猪,Mammalia,Artiodactyla,Suidae,Sus,scrofa,LC,none,omnivore,large,large_herbivore,ground,crepuscular,not endemic,1
+Macaca mulatta,猕猴,Mammalia,Primates,Cercopithecidae,Macaca,mulatta,LC,Class II,omnivore,medium,seed_disperser,arboreal,diurnal,not endemic,1
+Macaca thibetana,藏酋猴,Mammalia,Primates,Cercopithecidae,Macaca,thibetana,NT,Class II,omnivore,medium,seed_disperser,arboreal,diurnal,China endemic,2
+Tragopan temminckii,红腹角雉,Aves,Galliformes,Phasianidae,Tragopan,temminckii,LC,Class II,herbivore,medium,ground_bird,ground,diurnal,not endemic,1
+Chrysolophus pictus,红腹锦鸡,Aves,Galliformes,Phasianidae,Chrysolophus,pictus,LC,Class II,herbivore,medium,ground_bird,ground,diurnal,China endemic,1
+Chrysolophus amherstiae,白腹锦鸡,Aves,Galliformes,Phasianidae,Chrysolophus,amherstiae,LC,Class II,herbivore,medium,ground_bird,ground,diurnal,not endemic,1
+Lophura nycthemera,白鹇,Aves,Galliformes,Phasianidae,Lophura,nycthemera,LC,Class II,herbivore,medium,ground_bird,ground,diurnal,not endemic,1
+Pucrasia macrolopha,勺鸡,Aves,Galliformes,Phasianidae,Pucrasia,macrolopha,LC,Class II,herbivore,small,ground_bird,ground,diurnal,not endemic,1
+Lepus sinensis,华南兔,Mammalia,Lagomorpha,Leporidae,Lepus,sinensis,LC,none,herbivore,small,mesocarnivore,ground,crepuscular,China endemic,1
+Mustela sibirica,黄鼬,Mammalia,Carnivora,Mustelidae,Mustela,sibirica,LC,none,carnivore,small,mesocarnivore,ground,nocturnal,not endemic,1
+Meles meles,狗獾,Mammalia,Carnivora,Mustelidae,Meles,meles,LC,none,omnivore,medium,mesocarnivore,ground,nocturnal,not endemic,1
+Arctonyx collaris,猪獾,Mammalia,Carnivora,Mustelidae,Arctonyx,collaris,VU,none,omnivore,medium,mesocarnivore,ground,nocturnal,not endemic,4
+Paguma larvata,果子狸,Mammalia,Carnivora,Viverridae,Paguma,larvata,LC,none,omnivore,medium,mesocarnivore,arboreal,nocturnal,not endemic,1
+Urva urva,食蟹獴,Mammalia,Carnivora,Herpestidae,Urva,urva,LC,none,carnivore,medium,mesocarnivore,ground,diurnal,not endemic,1
+Muntiacus crinifrons,黑麂,Mammalia,Artiodactyla,Cervidae,Muntiacus,crinifrons,VU,Class I,herbivore,medium,large_herbivore,ground,crepuscular,China endemic,4
+Capricornis sumatraensis,中华鬣羚,Mammalia,Artiodactyla,Bovidae,Capricornis,sumatraensis,VU,Class II,herbivore,large,large_herbivore,ground,diurnal,not endemic,4
+Callosciurus erythraeus,赤腹松鼠,Mammalia,Rodentia,Sciuridae,Callosciurus,erythraeus,LC,none,omnivore,small,seed_disperser,arboreal,diurnal,not endemic,1
+Hystrix brachyura,豪猪,Mammalia,Rodentia,Hystricidae,Hystrix,brachyura,LC,none,herbivore,medium,large_herbivore,ground,nocturnal,not endemic,1
+Panthera tigris tigris,孟加拉虎,Mammalia,Carnivora,Felidae,Panthera,tigris,EN,Class I,carnivore,large,large_carnivore,ground,nocturnal,not endemic,8
+Viverra zibetha,大灵猫,Mammalia,Carnivora,Viverridae,Viverra,zibetha,CR,Class II,omnivore,medium,mesocarnivore,ground,nocturnal,not endemic,16
+Panthera pardus,金钱豹,Mammalia,Carnivora,Felidae,Panthera,pardus,VU,Class I,carnivore,large,large_carnivore,ground,nocturnal,not endemic,4
+Martes sp.,貂属,Mammalia,Carnivora,Mustelidae,Martes,,LC,Class II,carnivore,medium,mesocarnivore,arboreal,diurnal,not endemic,1
+Rusa unicolor,水鹿,Mammalia,Artiodactyla,Cervidae,Rusa,unicolor,VU,Class II,herbivore,large,large_herbivore,ground,crepuscular,not endemic,4
+Naemorhedus goral,斑羚,Mammalia,Artiodactyla,Bovidae,Naemorhedus,goral,VU,Class II,herbivore,medium,large_herbivore,ground,diurnal,not endemic,4
+Macaca arctoides,熊猴,Mammalia,Primates,Cercopithecidae,Macaca,arctoides,NT,Class II,omnivore,medium,seed_disperser,arboreal,diurnal,not endemic,2
+Manis pentadactyla,中华穿山甲,Mammalia,Pholidota,Manidae,Manis,pentadactyla,CR,Class I,insectivore,medium,mesocarnivore,ground,nocturnal,China endemic,16
+Paradoxurus hermaphroditus,椰子狸,Mammalia,Carnivora,Viverridae,Paradoxurus,hermaphroditus,EN,Class II,omnivore,medium,mesocarnivore,arboreal,nocturnal,not endemic,8
+Mustela kathiah,黄腹鼬,Mammalia,Carnivora,Mustelidae,Mustela,kathiah,NT,none,carnivore,small,mesocarnivore,ground,crepuscular,not endemic,2
+Melogale moschata,鼬獾,Mammalia,Carnivora,Mustelidae,Melogale,moschata,NT,none,omnivore,small,mesocarnivore,ground,nocturnal,not endemic,2
+Muntiacus nigripes,海南麂,Mammalia,Artiodactyla,Cervidae,Muntiacus,nigripes,VU,Class II,herbivore,medium,large_herbivore,ground,crepuscular,China endemic,4
+Ratufa bicolor,巨松鼠,Mammalia,Rodentia,Sciuridae,Ratufa,bicolor,EN,Class II,herbivore,large,seed_disperser,arboreal,diurnal,not endemic,8
+Dremomys rufigenis,赤颊松鼠,Mammalia,Rodentia,Sciuridae,Dremomys,rufigenis,LC,none,omnivore,small,seed_disperser,arboreal,diurnal,not endemic,1
+Atherurus macrourus,帚尾豪猪,Mammalia,Rodentia,Hystricidae,Atherurus,macrourus,LC,none,herbivore,medium,large_herbivore,ground,nocturnal,not endemic,1
+Leopoldamys edwardsi,白腹巨鼠,Mammalia,Rodentia,Muridae,Leopoldamys,edwardsi,LC,none,omnivore,small,mesocarnivore,ground,nocturnal,not endemic,1
+Menetes berdmorei,赤腹松鼠属,Mammalia,Rodentia,Sciuridae,Menetes,berdmorei,LC,none,omnivore,small,seed_disperser,arboreal,diurnal,not endemic,1
+Pteropus hypomelanus,海南果蝠,Mammalia,Chiroptera,Pteropodidae,Pteropus,hypomelanus,LC,none,herbivore,medium,seed_disperser,arboreal,nocturnal,not endemic,1

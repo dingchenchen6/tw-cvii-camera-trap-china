@@ -1,1 +1,3 @@
-metric_name_original,metric_name_standard,definition,formula,standard_unit,denominator_required,effort_sensitive,notes
+metric_name_standard,definition,formula,unit_standard,denominator,comparable_conditions,cautions,notes
+relative_abundance_index,Relative abundance index reported by camera-trap studies,independent_records / camera_days * 100,independent_records_per_100_camera_days,camera_days,Comparable only when independent-event threshold and sampling design are recorded,Do not use RAI without numerator denominator and event threshold,SRC000001 reports RAI formula on PDF p.4.
+camera_days,Total cumulative functioning camera days,sum active days across functioning camera stations,camera_days,NA,Comparable when malfunction days and station count are known,Do not confuse survey duration with camera-days,SRC000001 reports 30993 camera-days.

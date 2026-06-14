@@ -1,1 +1,2 @@
-site_name_original,site_name_standard,protected_area_name,province,prefecture,county,latitude,longitude,coordinate_precision,verification_status,notes
+location_name_entered,province,prefecture,county,protected_area_name,latitude,longitude,coordinate_precision,source,notes
+浙江清凉峰国家级自然保护区,Zhejiang,Hangzhou,Lin'an District,Zhejiang Qingliangfeng National Nature Reserve,NR,NR,range_reported,SRC000001 PDF p.2,Original coordinate range is 30°00′42″-30°19′33″N and 118°50′57″-119°13′23″E; do not coerce to point coordinates without a derivation rule.
