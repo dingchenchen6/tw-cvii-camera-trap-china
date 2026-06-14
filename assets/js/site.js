@@ -59,6 +59,69 @@
     `;
   }
 
+  function figureCard(item) {
+    return `
+      <article class="figure-card">
+        <div class="figure-image">
+          <img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.alt)}" loading="lazy">
+        </div>
+        <div class="figure-copy">
+          <span>${escapeHtml(item.kind)}</span>
+          <h3>${escapeHtml(item.title)}</h3>
+          <p>${escapeHtml(item.text)}</p>
+          <small>${escapeHtml(item.credit)}</small>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderFigures(mode) {
+    if (!mode.figures) return "";
+    return `
+      <section class="module-panel figure-showcase">
+        <div class="section-heading">
+          <p>${escapeHtml(mode.eyebrow)}</p>
+          <h2>${escapeHtml(mode.figuresTitle)}</h2>
+        </div>
+        <p class="section-intro">${escapeHtml(mode.figuresSubtitle)}</p>
+        <div class="figure-grid">
+          ${mode.figures.map(figureCard).join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  function caseStudyCard(item) {
+    return `
+      <article class="case-card">
+        <div class="case-card-head">
+          <span>${escapeHtml(item.tag)}</span>
+          <a href="${escapeHtml(item.url)}" rel="noreferrer">${escapeHtml(item.title)}</a>
+        </div>
+        <div class="metric-strip">
+          ${item.metrics.map((metric) => `<strong>${escapeHtml(metric)}</strong>`).join("")}
+        </div>
+        <p>${escapeHtml(item.text)}</p>
+      </article>
+    `;
+  }
+
+  function renderCaseStudies(page) {
+    if (!page.caseStudies) return "";
+    return `
+      <section class="module-panel case-study-panel">
+        <div class="section-heading">
+          <p>${escapeHtml(page.sourcesTitle)}</p>
+          <h2>${escapeHtml(page.caseStudiesTitle)}</h2>
+        </div>
+        <p class="section-intro">${escapeHtml(page.caseStudiesSubtitle)}</p>
+        <div class="case-grid">
+          ${page.caseStudies.map(caseStudyCard).join("")}
+        </div>
+      </section>
+    `;
+  }
+
   function renderMatrix(mode) {
     if (!mode.matrix) return "";
     return `
@@ -204,26 +267,26 @@
             <button class="secondary-action" type="button" data-next-mode="${escapeHtml(nextMode(state.mode))}">${escapeHtml(mode.actionSecondary)}</button>
           </div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="map-frame">
-            <span class="station station-a"></span>
-            <span class="station station-b"></span>
-            <span class="station station-c"></span>
-            <span class="station station-d"></span>
+        <div class="hero-visual">
+          <figure class="hero-media">
+            <img src="${escapeHtml(mode.heroImage.src)}" alt="${escapeHtml(mode.heroImage.alt)}">
             <div class="camera-card">
               <strong>TW-CVII</strong>
               <small>${escapeHtml(mode.label)}</small>
             </div>
-          </div>
+            <figcaption>${escapeHtml(mode.heroImage.caption)}</figcaption>
+          </figure>
         </div>
       </section>
       <section class="stats-grid" id="${escapeHtml(state.mode)}-primary">
         ${mode.stats.map(statCard).join("")}
       </section>
+      ${renderFigures(mode)}
       ${renderModeVisual(mode)}
       <section class="detail-grid">
         ${mode.sections.map(sectionCard).join("")}
       </section>
+      ${renderCaseStudies(page)}
       ${renderSources(page, mode)}
     `;
 

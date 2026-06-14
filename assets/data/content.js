@@ -5,6 +5,52 @@ window.TWCVII_CONTENT = {
     footer: "TW-CVII China 是一个公开学术项目站。原始全文、Zotero 本地数据和敏感坐标不在网站发布。",
     dataBoundary: "公开内容仅包括研究框架、工作流、字段规范、非敏感示例和分析计划；受限全文、原始相机文件、精确敏感点位和私人笔记不进入 GitHub Pages。",
     sourcesTitle: "参考框架",
+    caseStudiesTitle: "执行案例与参考研究",
+    caseStudiesSubtitle: "已进入本地候选数据库的 4 个种子案例用于验证字段和脚本；两篇 2026 全国尺度研究作为宏观参考和下一轮抽取目标，受限图件不公开复用。",
+    caseStudies: [
+      {
+        tag: "已执行",
+        title: "黄山九龙峰：物种照片、点位与活动节律",
+        metrics: ["32 台相机", "7,964 相机日", "15 种哺乳动物"],
+        text: "BDJ CC-BY 数据论文，已用于网站真实红外相机图像、点位图和活动节律图，并进入标准化数据库。",
+        url: "https://doi.org/10.3897/BDJ.14.e184017"
+      },
+      {
+        tag: "已执行",
+        title: "雅鲁藏布大峡谷：人为干扰与物种关联",
+        metrics: ["322 位点", "43,163 相机日", "17 个重点物种"],
+        text: "eLife CC-BY 研究，提供高海拔大型/中型兽类、干扰梯度和充分调查样例。",
+        url: "https://elifesciences.org/articles/92457"
+      },
+      {
+        tag: "已执行",
+        title: "海南尖峰岭：热带雨林哺乳动物编目",
+        metrics: ["123 台相机", "41,571 相机日", "15 种哺乳动物"],
+        text: "预印本记录中国穿山甲、海南麂、黑巨松鼠等关键物种，并突出人类活动与家犬干扰字段。",
+        url: "https://doi.org/10.21203/rs.3.rs-6436787/v1"
+      },
+      {
+        tag: "已执行",
+        title: "秦岭佛坪：大熊猫核心栖息地鸟兽调查",
+        metrics: ["130 台相机", "101,220 相机日", "29 种哺乳动物"],
+        text: "中文 Biodiversity Science 案例，用于检验中文表格、附录物种清单和保护地字段抽取。",
+        url: "https://www.biodiversity-science.net/EN/10.17520/biods.2019240"
+      },
+      {
+        tag: "下一轮",
+        title: "全国哺乳动物多样性格局与驱动因子",
+        metrics: ["281 篇文献", "212 地点", "210 种哺乳动物"],
+        text: "Liu et al. 2026 Biodiversity and Conservation，为分类、功能和系统发育多样性层提供全国尺度参照。",
+        url: "https://doi.org/10.1007/s10531-025-03248-x"
+      },
+      {
+        tag: "下一轮",
+        title: "中国保护区食肉动物广泛分布收缩",
+        metrics: ["85 个保护区", ">180 万相机日", "82 种哺乳动物"],
+        text: "He et al. 2026 Nature Sustainability，用于校准历史基线、保护地绩效和 silent range 判读逻辑。",
+        url: "https://www.nature.com/articles/s41893-026-01855-2"
+      }
+    ],
     modes: {
       research: {
         label: "Research",
@@ -13,10 +59,35 @@ window.TWCVII_CONTENT = {
         subtitle: "整合历史分布、当代红外相机证据、调查充分性、红色名录和功能性状，评估中国陆生脊椎动物群落是否仍保持可探测、可解释的生态完整性。",
         actionPrimary: "查看证据状态",
         actionSecondary: "进入数据库设计",
+        heroImage: {
+          src: "assets/media/huangshan-camera-trap-species.jpg",
+          alt: "黄山九龙峰红外相机拍摄的九种哺乳动物拼图",
+          caption: "真实红外相机物种影像 | Zhao et al. 2026 CC BY 4.0"
+        },
         stats: [
           { value: "4", label: "证据状态", detail: "确认持续存在、沉默分布区、监测缺口、新确认分布" },
           { value: "5", label: "完整性维度", detail: "物种、探测校正、威胁加权、功能、丰度代理" },
           { value: "CN", label: "研究范围", detail: "中国红外相机文献、保护地和国家公园监测证据" }
+        ],
+        figuresTitle: "概念框架与真实影像",
+        figuresSubtitle: "用原创框架图说明 TW-CVII 逻辑，用开放许可红外相机图像展示数据库需要捕捉的真实证据类型。",
+        figures: [
+          {
+            kind: "Concept figure",
+            title: "TW-CVII 概念框架图",
+            src: "assets/media/twcvii-concept-framework.svg",
+            alt: "TW-CVII 概念框架：历史基线、当代证据、调查充分性、权重层进入证据状态和完整性输出",
+            text: "把历史预期、当代探测、调查充分性和威胁/功能权重分层，避免把未探测直接等同于消失。",
+            credit: "本项目原创图"
+          },
+          {
+            kind: "Camera-trap plate",
+            title: "真实红外相机物种照片",
+            src: "assets/media/huangshan-camera-trap-species.jpg",
+            alt: "黄山九龙峰红外相机拍摄的鬣羚、麂、猪獾、果子狸、黑麂、藏酋猴、豪猪、食蟹獴和猕猴",
+            text: "展示物种识别、图像证据、独立记录和 RAI 字段之间的连接。",
+            credit: "Zhao et al. 2026, BDJ, CC BY 4.0"
+          }
         ],
         diagramTitle: "物种-地点证据判定",
         matrix: [
@@ -39,10 +110,35 @@ window.TWCVII_CONTENT = {
         subtitle: "多库检索、Zotero 知识库、OneFind 本地检索、AI 候选抽取、人工核验、清洗标准化、数据库冻结和论文写作审计，形成可复现的数据生产线；当前已落地 CSV 模板、验证脚本和第一篇候选抽取样例。",
         actionPrimary: "查看流程",
         actionSecondary: "查看质量门槛",
+        heroImage: {
+          src: "assets/media/huangshan-camera-network.jpg",
+          alt: "黄山九龙峰保护区红外相机点位图",
+          caption: "相机点位与空间单元 | Zhao et al. 2026 CC BY 4.0"
+        },
         stats: [
           { value: "7+", label: "检索轮次", detail: "关键词、类群、RAI、努力量、保护地、干扰和追踪检索" },
           { value: "6", label: "质量门槛", detail: "从检索完整性到 analysis-ready 冻结" },
           { value: "Zotero", label: "知识库主入口", detail: "题录、全文、附件、标签和引用键统一管理" }
+        ],
+        figuresTitle: "技术流程与空间证据",
+        figuresSubtitle: "从浏览器检索、题录导入、全文/附录下载到 Zotero/OneFind 知识库，再到 AI 候选抽取、人工核验和数据库冻结。",
+        figures: [
+          {
+            kind: "Workflow figure",
+            title: "文献到数据库技术流程图",
+            src: "assets/media/twcvii-technical-workflow.svg",
+            alt: "红外相机文献到数据库的技术流程图",
+            text: "将 Web of Science/CNKI 导出、Zotero、OneFind、Codex/Claude 候选抽取、人工核验和 DuckDB/SQLite 发布串成可执行管线。",
+            credit: "本项目原创图"
+          },
+          {
+            kind: "Spatial evidence",
+            title: "相机点位图与地点字段",
+            src: "assets/media/huangshan-camera-network.jpg",
+            alt: "黄山九龙峰自然保护区红外相机监测点位地图",
+            text: "提醒抽取时必须记录地名、经纬度、坐标精度、保护地名称、面积、海拔和空间单元。",
+            credit: "Zhao et al. 2026, BDJ, CC BY 4.0"
+          }
         ],
         diagramTitle: "研究生产线",
         timeline: [
@@ -70,10 +166,27 @@ window.TWCVII_CONTENT = {
         subtitle: "以 Source-Study-Block-Site-Measurement 为生态层级，以 deployment-media-observation 为红外相机技术骨架，并加入 TW-CVII 的历史预期和证据状态表。",
         actionPrimary: "查看表结构",
         actionSecondary: "查看分析视图",
+        heroImage: {
+          src: "assets/media/twcvii-field-architecture.svg",
+          alt: "红外相机数据库字段架构图",
+          caption: "Source-Study-Site-Measurement + Camtrap DP + TW-CVII"
+        },
         stats: [
           { value: "26", label: "核心表", detail: "从来源、研究、地点、相机布设到证据状态和指数输出" },
           { value: "4", label: "字段等级", detail: "Mandatory、High priority、Optional、Derived" },
-          { value: "54", label: "种子物种记录", detail: "清凉峰样例已进入 candidate 数据库，等待人工核验" }
+          { value: "52", label: "种子物种记录", detail: "4 篇种子文献已进入 analysis-ready 候选库，仍保留核验标记" }
+        ],
+        figuresTitle: "字段架构与标准化骨架",
+        figuresSubtitle: "把文献信息、地点、时间、相机努力量、物种记录、保护状态、历史基线和证据状态拆成可审计的关系表。",
+        figures: [
+          {
+            kind: "Schema figure",
+            title: "红外相机字段架构图",
+            src: "assets/media/twcvii-field-architecture.svg",
+            alt: "TW-CVII 数据库标准字段架构图",
+            text: "经纬度、地名、时间、文献信息、相机日、相机数量、物种名录和 RAI 均作为跨表关键字段保留。",
+            credit: "本项目原创图"
+          }
         ],
         diagramTitle: "关系型数据库层级",
         schemaGroups: [
@@ -85,6 +198,7 @@ window.TWCVII_CONTENT = {
         ],
         sections: [
           { title: "PREDICTS 层级", text: "Source -> Study -> Block -> Site -> Measurement 让不同文献、地点和采样设计能被清楚比较，并支持研究层级随机效应。" },
+          { title: "关键字段族", text: "每条记录必须尽量连接文献信息、地名、经纬度、坐标精度、监测起止时间、相机数量、相机工作日、监测面积、物种清单、独立记录、RAI/多度指标和字段级证据来源。" },
           { title: "DiVert 兼容", text: "数据库记录主要土地利用、利用强度、放牧、道路、人为干扰、管理实践和参考基线，支持保护区内外或低干扰-高干扰比较。" },
           { title: "TW-CVII 扩展", text: "历史预期、调查充分性、红色名录权重和功能权重不手工塞进物种表，而是作为可审计、可复算的分析层。" }
         ],
@@ -97,10 +211,35 @@ window.TWCVII_CONTENT = {
         subtitle: "支持 silent range、monitoring gap、威胁加权完整性、功能完整性、保护区比较和红色名录一致性分析；当前展示为分析框架，不代表最终结果。",
         actionPrimary: "查看分析模块",
         actionSecondary: "查看研究输出",
+        heroImage: {
+          src: "assets/media/huangshan-nocturnal-index.jpg",
+          alt: "黄山九龙峰七种重点物种夜行相对多度指数图",
+          caption: "活动节律与指数示例 | Zhao et al. 2026 CC BY 4.0"
+        },
         stats: [
           { value: "4", label: "分析视图", detail: "species-site evidence、intactness inputs、PA effectiveness、Red List mismatch" },
           { value: "3", label: "基线情景", detail: "conservative、intermediate、broad historical baselines" },
           { value: "QA", label: "可复核输出", detail: "每个图表连接数据库版本、脚本版本和证据来源" }
+        ],
+        figuresTitle: "分析图表与顶刊案例参照",
+        figuresSubtitle: "将单篇文献中的活动节律、RAI 和调查充分性扩展到全国尺度的 evidence-state 与保护区绩效分析。",
+        figures: [
+          {
+            kind: "Analysis example",
+            title: "活动节律与 NRAI 示例",
+            src: "assets/media/huangshan-nocturnal-index.jpg",
+            alt: "七种重点物种夜行指数柱状图",
+            text: "活动节律图提示数据库需要保留时间戳、昼夜判定、月份/季节和物种功能类群字段。",
+            credit: "Zhao et al. 2026, BDJ, CC BY 4.0"
+          },
+          {
+            kind: "National reference",
+            title: "全国保护区分布收缩案例",
+            src: "assets/media/twcvii-concept-framework.svg",
+            alt: "TW-CVII 概念框架用于解释全国保护区分布收缩案例",
+            text: "He et al. 2026 的历史-当代比较为 silent range、保护地绩效和大型食肉动物恢复困境提供方法参照。",
+            credit: "本项目原创图；He et al. 2026 仅作引用参照"
+          }
         ],
         diagramTitle: "分析框架",
         analysisCards: [
@@ -115,7 +254,7 @@ window.TWCVII_CONTENT = {
           { title: "气候位移过滤分类器", text: "用 1950s–2020s 气候常态判断空间单元气候包络是否移出物种历史热生态位；若 silent range 落在气候已显著漂移的单元，标记为 climate_explainable，与人为去动物化区分。" }
         ],
         views: ["view_species_site_evidence", "view_site_intactness_inputs", "view_pa_effectiveness_inputs", "view_redlist_mismatch_inputs"],
-        sources: ["TW-CVII proposal", "Occupancy modelling", "Protected-area matching", "Red List sensitivity"]
+        sources: ["TW-CVII proposal", "Occupancy modelling", "Protected-area matching", "Red List sensitivity", "He et al. 2026", "Liu et al. 2026"]
       }
     }
   },
@@ -125,6 +264,52 @@ window.TWCVII_CONTENT = {
     footer: "TW-CVII China is a public academic project website. Raw full texts, local Zotero data, and sensitive coordinates are not published here.",
     dataBoundary: "Public content includes the research framework, workflow, schema, non-sensitive examples, and analysis plan only; restricted full texts, raw camera files, exact sensitive locations, and private notes are not published on GitHub Pages.",
     sourcesTitle: "Reference frameworks",
+    caseStudiesTitle: "Executed Cases and Reference Studies",
+    caseStudiesSubtitle: "Four seed papers are already represented in the local candidate database for field and script testing; two 2026 national-scale studies are registered as macro-reference and next-round extraction targets.",
+    caseStudies: [
+      {
+        tag: "Executed",
+        title: "Huangshan Jiulongfeng: species images, sites, activity",
+        metrics: ["32 cameras", "7,964 camera-days", "15 mammal species"],
+        text: "A CC-BY Biodiversity Data Journal data paper used for the website camera-trap image plate, site map, activity plot, and standardized database seed.",
+        url: "https://doi.org/10.3897/BDJ.14.e184017"
+      },
+      {
+        tag: "Executed",
+        title: "Yarlung Zangbo Grand Canyon: disturbance associations",
+        metrics: ["322 stations", "43,163 camera-days", "17 focus species"],
+        text: "An eLife CC-BY study providing a high-effort mountain mammal and disturbance-covariate example.",
+        url: "https://elifesciences.org/articles/92457"
+      },
+      {
+        tag: "Executed",
+        title: "Jianfengling: tropical-rainforest mammal inventory",
+        metrics: ["123 cameras", "41,571 camera-days", "15 mammal species"],
+        text: "A preprint documenting Chinese pangolin, Hainan muntjac, black giant squirrel, and human/dog disturbance fields.",
+        url: "https://doi.org/10.21203/rs.3.rs-6436787/v1"
+      },
+      {
+        tag: "Executed",
+        title: "Foping Qinling: bird and mammal survey in panda habitat",
+        metrics: ["130 cameras", "101,220 camera-days", "29 mammals"],
+        text: "A Chinese Biodiversity Science case for testing Chinese tables, appendix species lists, and protected-area fields.",
+        url: "https://www.biodiversity-science.net/EN/10.17520/biods.2019240"
+      },
+      {
+        tag: "Next round",
+        title: "Mainland China mammal diversity patterns and drivers",
+        metrics: ["281 articles", "212 sites", "210 mammal species"],
+        text: "Liu et al. 2026 in Biodiversity and Conservation provides national-scale taxonomic, functional, and phylogenetic diversity reference logic.",
+        url: "https://doi.org/10.1007/s10531-025-03248-x"
+      },
+      {
+        tag: "Next round",
+        title: "Carnivore range contraction in Chinese protected areas",
+        metrics: ["85 protected areas", ">1.8 million camera-days", "82 mammal species"],
+        text: "He et al. 2026 in Nature Sustainability informs historical baselines, protected-area effectiveness, and silent-range interpretation.",
+        url: "https://www.nature.com/articles/s41893-026-01855-2"
+      }
+    ],
     modes: {
       research: {
         label: "Research",
@@ -133,10 +318,35 @@ window.TWCVII_CONTENT = {
         subtitle: "Integrating historical distributions, contemporary camera-trap evidence, survey adequacy, Red List status, and functional traits to evaluate evidence-based vertebrate intactness in China.",
         actionPrimary: "View evidence states",
         actionSecondary: "Open database design",
+        heroImage: {
+          src: "assets/media/huangshan-camera-trap-species.jpg",
+          alt: "Nine mammal species photographed by camera traps in Huangshan Jiulongfeng",
+          caption: "Camera-trap species imagery | Zhao et al. 2026 CC BY 4.0"
+        },
         stats: [
           { value: "4", label: "Evidence states", detail: "Confirmed persistence, silent range, monitoring gap, newly confirmed occurrence" },
           { value: "5", label: "Intactness dimensions", detail: "Species, detection-corrected, threat-weighted, functional, abundance-proxy" },
           { value: "CN", label: "Study system", detail: "Chinese camera-trap literature, protected areas, and national park monitoring evidence" }
+        ],
+        figuresTitle: "Concept Framework and Camera-trap Evidence",
+        figuresSubtitle: "Original project diagrams explain the TW-CVII logic, while open-licensed camera-trap images show the evidence types the database must preserve.",
+        figures: [
+          {
+            kind: "Concept figure",
+            title: "TW-CVII concept framework",
+            src: "assets/media/twcvii-concept-framework.svg",
+            alt: "TW-CVII concept framework linking historical baselines, contemporary evidence, survey adequacy, weighting layers, evidence states, and intactness outputs",
+            text: "The framework separates historical expectation, contemporary detection, survey adequacy, and threat/functional weighting before classifying evidence states.",
+            credit: "Original TW-CVII project diagram"
+          },
+          {
+            kind: "Camera-trap plate",
+            title: "Real camera-trap species photographs",
+            src: "assets/media/huangshan-camera-trap-species.jpg",
+            alt: "Camera-trap photographs of serow, muntjac, hog badger, masked palm civet, black muntjac, Tibetan macaque, Malayan porcupine, crab-eating mongoose, and rhesus macaque",
+            text: "The image plate illustrates why species ID, image evidence, independent events, and RAI fields need linked provenance.",
+            credit: "Zhao et al. 2026, BDJ, CC BY 4.0"
+          }
         ],
         diagramTitle: "Species-by-site evidence classification",
         matrix: [
@@ -159,10 +369,35 @@ window.TWCVII_CONTENT = {
         subtitle: "Multi-database search, Zotero knowledge base, OneFind retrieval, AI-assisted candidate extraction, human verification, cleaning, database freeze, and manuscript audit. CSV templates, validation scripts, and the first candidate extraction seed are now implemented.",
         actionPrimary: "View pipeline",
         actionSecondary: "View QA gates",
+        heroImage: {
+          src: "assets/media/huangshan-camera-network.jpg",
+          alt: "Camera-trap station map for Huangshan Jiulongfeng Nature Reserve",
+          caption: "Camera stations and spatial units | Zhao et al. 2026 CC BY 4.0"
+        },
         stats: [
           { value: "7+", label: "Search rounds", detail: "Keywords, taxa, RAI, effort, protected areas, disturbance, and citation chasing" },
           { value: "6", label: "Quality gates", detail: "From search completeness to analysis-ready database freeze" },
           { value: "Zotero", label: "Knowledge hub", detail: "Metadata, full text, supplements, tags, and citation keys in one system" }
+        ],
+        figuresTitle: "Technical Workflow and Spatial Evidence",
+        figuresSubtitle: "The executable workflow links browser search, citation exports, full-text and appendix intake, Zotero/OneFind, AI extraction, human verification, and database release.",
+        figures: [
+          {
+            kind: "Workflow figure",
+            title: "Literature-to-database technical workflow",
+            src: "assets/media/twcvii-technical-workflow.svg",
+            alt: "Technical workflow from camera-trap literature search to database and manuscript audit",
+            text: "The workflow turns CNKI/WoS exports, Zotero, OneFind, Codex/Claude extraction, human verification, and DuckDB/SQLite release into one auditable pipeline.",
+            credit: "Original TW-CVII project diagram"
+          },
+          {
+            kind: "Spatial evidence",
+            title: "Camera-station map and locality fields",
+            src: "assets/media/huangshan-camera-network.jpg",
+            alt: "Map of infrared camera-trap stations in Huangshan Jiulongfeng Nature Reserve",
+            text: "The map highlights the need to extract locality names, coordinates, coordinate precision, protected-area name, area, elevation, and spatial unit.",
+            credit: "Zhao et al. 2026, BDJ, CC BY 4.0"
+          }
         ],
         diagramTitle: "Research production line",
         timeline: [
@@ -190,10 +425,27 @@ window.TWCVII_CONTENT = {
         subtitle: "Combining Source-Study-Block-Site-Measurement ecological structure with deployment-media-observation camera-trap structure and TW-CVII evidence-state tables.",
         actionPrimary: "View schema",
         actionSecondary: "View analysis views",
+        heroImage: {
+          src: "assets/media/twcvii-field-architecture.svg",
+          alt: "Camera-trap database field architecture diagram",
+          caption: "Source-Study-Site-Measurement + Camtrap DP + TW-CVII"
+        },
         stats: [
           { value: "26", label: "Core tables", detail: "From sources, studies, sites, and deployments to evidence states and derived indices" },
           { value: "4", label: "Field tiers", detail: "Mandatory, high priority, optional, and derived fields" },
-          { value: "54", label: "Seed species records", detail: "The Qingliangfeng case is loaded into the candidate database for human verification" }
+          { value: "52", label: "Seed species records", detail: "Four seed sources are represented in the analysis-ready candidate database with verification flags" }
+        ],
+        figuresTitle: "Field Architecture and Standardization Spine",
+        figuresSubtitle: "Citation metadata, locality, time, camera effort, species records, protection status, historical baselines, and evidence states are stored in auditable relational tables.",
+        figures: [
+          {
+            kind: "Schema figure",
+            title: "Camera-trap field architecture",
+            src: "assets/media/twcvii-field-architecture.svg",
+            alt: "TW-CVII standardized camera-trap field architecture",
+            text: "Coordinates, place names, dates, citation metadata, camera-days, camera counts, species inventories, and RAI are kept as cross-table priority fields.",
+            credit: "Original TW-CVII project diagram"
+          }
         ],
         diagramTitle: "Relational database layers",
         schemaGroups: [
@@ -205,6 +457,7 @@ window.TWCVII_CONTENT = {
         ],
         sections: [
           { title: "PREDICTS hierarchy", text: "Source -> Study -> Block -> Site -> Measurement makes heterogeneous literature, localities, and sampling designs comparable while supporting study-level random effects." },
+          { title: "Critical field families", text: "Each record should connect citation metadata, place name, coordinates, coordinate precision, monitoring start/end dates, camera counts, camera-days, survey area, species inventory, independent events, RAI/abundance metrics, and field-level provenance." },
           { title: "DiVert compatibility", text: "The database records land use, use intensity, grazing, roads, human disturbance, management practices, and reference baselines for low- versus high-disturbance comparisons." },
           { title: "TW-CVII extension", text: "Historical expectation, survey adequacy, Red List weights, and functional weights are stored as auditable analytical layers rather than being hidden inside species tables." }
         ],
@@ -217,10 +470,35 @@ window.TWCVII_CONTENT = {
         subtitle: "Supporting silent-range, monitoring-gap, threat-weighted intactness, functional intactness, protected-area comparison, and Red List mismatch analyses. This page shows the analysis framework, not final results.",
         actionPrimary: "View analysis modules",
         actionSecondary: "View outputs",
+        heroImage: {
+          src: "assets/media/huangshan-nocturnal-index.jpg",
+          alt: "Nocturnal relative abundance index chart for seven focal species in Huangshan Jiulongfeng",
+          caption: "Activity and index example | Zhao et al. 2026 CC BY 4.0"
+        },
         stats: [
           { value: "4", label: "Analysis views", detail: "Species-site evidence, intactness inputs, PA effectiveness, Red List mismatch" },
           { value: "3", label: "Baseline scenarios", detail: "Conservative, intermediate, and broad historical baselines" },
           { value: "QA", label: "Auditable outputs", detail: "Each figure links to database version, script version, and evidence source" }
+        ],
+        figuresTitle: "Analysis Examples and High-impact References",
+        figuresSubtitle: "Single-paper activity, RAI, and survey-adequacy fields scale into national evidence-state, intactness, and protected-area performance analyses.",
+        figures: [
+          {
+            kind: "Analysis example",
+            title: "Activity rhythm and NRAI example",
+            src: "assets/media/huangshan-nocturnal-index.jpg",
+            alt: "Bar chart of nocturnal relative abundance index values for seven focal species",
+            text: "Activity-rhythm plots show why timestamps, day/night classification, month/season, and functional guild fields must be preserved.",
+            credit: "Zhao et al. 2026, BDJ, CC BY 4.0"
+          },
+          {
+            kind: "National reference",
+            title: "National protected-area range-contraction reference",
+            src: "assets/media/twcvii-concept-framework.svg",
+            alt: "TW-CVII framework used to interpret national protected-area range-contraction studies",
+            text: "He et al. 2026 informs the logic for historical baselines, protected-area effectiveness, and silent-range interpretation.",
+            credit: "Original TW-CVII diagram; He et al. 2026 cited as reference only"
+          }
         ],
         diagramTitle: "Analysis framework",
         analysisCards: [
@@ -235,7 +513,7 @@ window.TWCVII_CONTENT = {
           { title: "Climate-shift filter", text: "Using 1950s–2020s climate normals, silent ranges in spatial units whose climate envelope has shifted beyond a species' historical thermal niche are flagged as climate-explainable, separating climate-driven repositioning from anthropogenic defaunation." }
         ],
         views: ["view_species_site_evidence", "view_site_intactness_inputs", "view_pa_effectiveness_inputs", "view_redlist_mismatch_inputs"],
-        sources: ["TW-CVII proposal", "Occupancy modelling", "Protected-area matching", "Red List sensitivity"]
+        sources: ["TW-CVII proposal", "Occupancy modelling", "Protected-area matching", "Red List sensitivity", "He et al. 2026", "Liu et al. 2026"]
       }
     }
   }

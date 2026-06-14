@@ -1,2 +1,7 @@
 source_id,zotero_item_key,screen_stage,decision,exclusion_reason,extraction_priority,decided_by,decision_date,notes
-SRC000001,PENDING_ZOTERO,full_text,include_candidate,NA,high,Codex,2026-06-14,Includes camera-days, station count, site areas, species inventory, RAI and disturbance; high-impact fields require human verification.
+SRC000001,PENDING_ZOTERO,full_text,include_candidate,NA,high,Codex,2026-06-14,"Includes camera-days, station count, site areas, species inventory, RAI and disturbance; high-impact fields require human verification."
+SRC000002,PENDING_ZOTERO,full_text,include_verified_seed,NA,high,Codex,2026-06-14,Open eLife study with source data; high-effort site suitable for disturbance covariates and survey-adequacy calibration.
+SRC000003,PENDING_ZOTERO,full_text,include_verified_seed,NA,high,Codex,2026-06-14,"Tropical rainforest case with camera counts, habitat strata, species table, RAI and human/dog disturbance; raw data not public."
+SRC000004,PENDING_ZOTERO,full_text,include_verified_seed_partial,NA,high,Codex,2026-06-14,Chinese protected-area seed; appendix/high-impact field verification remains partial.
+SRC000005,PENDING_ZOTERO,title_abstract,include_reference_target,NA,medium,Codex,2026-06-14,"National camera-trap synthesis relevant to traits, phylogeny and protected-area effects; subscription article and data embargo."
+SRC000006,PENDING_ZOTERO,title_abstract,include_reference_target,NA,high,Codex,2026-06-14,High-impact historical-current protected-area reference for silent range and carnivore contraction logic; supplementary data identified.

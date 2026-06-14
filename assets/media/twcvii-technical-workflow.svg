@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Camera-trap literature-to-database technical workflow</title>
+  <desc id="desc">A reproducible workflow from literature search and Zotero intake to AI extraction, human verification, standardized database, analysis, and manuscript audit.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8faf8"/>
+      <stop offset="1" stop-color="#eef3f1"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#244f45"/>
+    </marker>
+    <style>
+      .title { font: 850 32px Inter, Arial, sans-serif; fill: #143a2d; }
+      .subtitle { font: 600 14px Inter, Arial, sans-serif; fill: #637169; }
+      .lane { font: 850 13px Inter, Arial, sans-serif; fill: #ffffff; }
+      .step { font: 850 16px Inter, Arial, sans-serif; fill: #1f2933; }
+      .small { font: 600 12px Inter, Arial, sans-serif; fill: #5d6b63; }
+      .box { rx: 10; stroke: #d6dfd7; stroke-width: 1.2; fill: #ffffff; }
+      .arrow { stroke: #244f45; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="680" fill="url(#bg)"/>
+  <text x="58" y="62" class="title">Executable Literature-to-Database Workflow</text>
+  <text x="60" y="90" class="subtitle">Search broadly, download lawfully, extract with provenance, verify high-impact fields, then freeze an analysis-ready camera-trap database.</text>
+
+  <rect x="60" y="128" width="1080" height="74" rx="10" fill="#143a2d"/>
+  <text x="82" y="172" class="lane">01 Search and Intake</text>
+  <rect x="60" y="252" width="1080" height="74" rx="10" fill="#28796a"/>
+  <text x="82" y="296" class="lane">02 Extraction and Standardization</text>
+  <rect x="60" y="376" width="1080" height="74" rx="10" fill="#7b8c3f"/>
+  <text x="82" y="420" class="lane">03 Database, Analysis, and Manuscript Audit</text>
+
+  <g transform="translate(236 118)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">Search strings</text>
+    <text x="18" y="57" class="small">CNKI, WoS, VIP,</text>
+    <text x="18" y="76" class="small">Wanfang, Scholar</text>
+  </g>
+  <g transform="translate(424 118)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">Downloads</text>
+    <text x="18" y="57" class="small">PDF, CAJ, XLSX,</text>
+    <text x="18" y="76" class="small">appendices</text>
+  </g>
+  <g transform="translate(612 118)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">Zotero hub</text>
+    <text x="18" y="57" class="small">Metadata, tags,</text>
+    <text x="18" y="76" class="small">attachments</text>
+  </g>
+  <g transform="translate(800 118)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">OneFind</text>
+    <text x="18" y="57" class="small">Local retrieval</text>
+    <text x="18" y="76" class="small">and evidence QA</text>
+  </g>
+
+  <g transform="translate(236 242)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">AI candidates</text>
+    <text x="18" y="57" class="small">Tables, captions,</text>
+    <text x="18" y="76" class="small">supplements</text>
+  </g>
+  <g transform="translate(424 242)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">Verification</text>
+    <text x="18" y="57" class="small">Camera-days, GPS,</text>
+    <text x="18" y="76" class="small">RAI, dates</text>
+  </g>
+  <g transform="translate(612 242)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">Cleaning</text>
+    <text x="18" y="57" class="small">Taxonomy, units,</text>
+    <text x="18" y="76" class="small">missing codes</text>
+  </g>
+  <g transform="translate(800 242)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">QA gates</text>
+    <text x="18" y="57" class="small">No orphan rows,</text>
+    <text x="18" y="76" class="small">field provenance</text>
+  </g>
+
+  <g transform="translate(236 366)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">DuckDB/SQLite</text>
+    <text x="18" y="57" class="small">Source-study-site</text>
+    <text x="18" y="76" class="small">schema release</text>
+  </g>
+  <g transform="translate(424 366)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">Analysis views</text>
+    <text x="18" y="57" class="small">Evidence state,</text>
+    <text x="18" y="76" class="small">TW-CVII inputs</text>
+  </g>
+  <g transform="translate(612 366)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">Figures</text>
+    <text x="18" y="57" class="small">Maps, matrices,</text>
+    <text x="18" y="76" class="small">sensitivity plots</text>
+  </g>
+  <g transform="translate(800 366)">
+    <rect class="box" width="145" height="96"/>
+    <text x="18" y="31" class="step">Manuscript</text>
+    <text x="18" y="57" class="small">Claim-audit links</text>
+    <text x="18" y="76" class="small">to source fields</text>
+  </g>
+
+  <path class="arrow" d="M382 166 H421"/>
+  <path class="arrow" d="M570 166 H609"/>
+  <path class="arrow" d="M758 166 H797"/>
+  <path class="arrow" d="M872 214 C872 230 308 226 308 240"/>
+  <path class="arrow" d="M382 290 H421"/>
+  <path class="arrow" d="M570 290 H609"/>
+  <path class="arrow" d="M758 290 H797"/>
+  <path class="arrow" d="M872 338 C872 354 308 350 308 364"/>
+  <path class="arrow" d="M382 414 H421"/>
+  <path class="arrow" d="M570 414 H609"/>
+  <path class="arrow" d="M758 414 H797"/>
+
+  <g transform="translate(168 530)">
+    <rect x="0" y="0" width="864" height="86" rx="12" fill="#ffffff" stroke="#d6dfd7"/>
+    <text x="28" y="36" class="step">Non-negotiable evidence rule</text>
+    <text x="28" y="62" class="small">Every final field must keep source_id, file, page/table/appendix locator, extraction batch, verifier, missing-code status, and database version.</text>
+  </g>
+</svg>

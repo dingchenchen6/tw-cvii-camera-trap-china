@@ -1,1 +1,3 @@
 source_id,reason_code,reason_detail,checked_date,next_attempt_date
+SRC000005,subscription_preview_only,Springer page provides abstract/metadata and notes Figshare data under embargo; full article PDF not downloaded or reused.,2026-06-14,2026-08-01
+SRC000006,rights_restricted_article,Nature Sustainability article figures and full text are rights-restricted; supplementary information/data links are available for later permitted inspection.,2026-06-14,2026-06-20

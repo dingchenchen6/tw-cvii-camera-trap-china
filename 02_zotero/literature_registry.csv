@@ -1,1 +1,7 @@
 source_id,zotero_item_key,bibtex_key,title_short,screening_status,extraction_status,file_checksum,data_table_ids,notes
+SRC000001,PENDING_ZOTERO,zhao2022qingliangfeng,清凉峰红外相机鸟兽多样性,include_candidate,candidate_unverified,PENDING,source/study/site/species_inventory,Chinese seed PDF; Zotero import still pending.
+SRC000002,PENDING_ZOTERO,li2024yarlung,Yarlung Zangbo disturbance associations,include_verified,verified_seed,PENDING,source/study/site/species_inventory/species_site_measurement/evidence_state,eLife open-access case; source data available.
+SRC000003,PENDING_ZOTERO,yan2025jianfengling,Jianfengling Hainan mammal survey,include_verified,verified_seed,PENDING,source/study/site/species_inventory/species_site_measurement/evidence_state,Research Square preprint; supplementary data by request.
+SRC000004,PENDING_ZOTERO,ma2020foping,Foping camera-trapping mammals birds,include_verified,partial_appendix_verification,PENDING,source/study/site/species_inventory/species_site_measurement/evidence_state,Chinese Biodiversity Science case; appendix verification incomplete.
+SRC000005,PENDING_ZOTERO,liu2026mainlanddiversity,Mainland China mammal diversity drivers,reference_target,metadata_registered,PENDING,reference_notes,Springer subscription preview; no article figures reused.
+SRC000006,PENDING_ZOTERO,he2026carnivorecontraction,Carnivore range contraction in Chinese PAs,reference_target,metadata_registered,PENDING,reference_notes,Nature Sustainability reference; supplementary tables/data identified; figures not reused.
