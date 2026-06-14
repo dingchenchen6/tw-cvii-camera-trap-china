@@ -2,4 +2,7 @@
 .worktrees/
 node_modules/
 dist/
+tmp/
+03_full_text/pdf/
+03_full_text/text/
 .DS_Store

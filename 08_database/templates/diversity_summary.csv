@@ -1,0 +1,4 @@
+diversity_id,study_id,site_id,taxonomic_scope,species_richness_observed,shannon_index,simpson_index,total_independent_events,total_valid_photos,total_camera_days,rarefied_richness,functional_diversity,phylogenetic_diversity,source_metric_name,extraction_page,verification_status
+DIV000001,STU000001,SITE000001,Mammalia,18,,,18363,18363,30993,,,,recorded mammal species total,PDF p.4; Table 1,candidate
+DIV000002,STU000001,SITE000001,Aves,36,,,18363,18363,30993,,,,recorded bird species total,PDF p.4; Table 1,candidate
+DIV000003,STU000001,SITE000001,Mammalia+Aves,54,,,18363,18363,30993,,,,recorded species total,PDF p.4; Table 1,candidate

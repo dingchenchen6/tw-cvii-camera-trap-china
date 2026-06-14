@@ -1,0 +1,4 @@
+issue_id,source_id,table_name,record_id,issue_type,severity,description,proposed_resolution,status,created_date,resolved_date,owner
+ISSUE000001,SRC000001,source,SRC000001,appendix_missing,high,"Paper references Appendix 1, but current PDF text extraction did not include appendix content.",Inspect journal HTML and supplementary links; download appendix if available.,open,2026-06-14,,project
+ISSUE000002,SRC000001,source,SRC000001,zotero_pending,medium,"Zotero Desktop API was enabled but not running, so Zotero item key could not be assigned.","Start Zotero Desktop, import source, attach PDF, export BibTeX key.",open,2026-06-14,,project
+ISSUE000003,SRC000001,site,SITE000001,coordinate_precision,medium,Paper reports reserve coordinate range and station map but not exact camera station coordinates.,Keep exact station coordinates as NR unless supplementary data or author-provided data are available.,open,2026-06-14,,project

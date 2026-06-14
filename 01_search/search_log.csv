@@ -1,0 +1,2 @@
+search_id,date,database_or_source,platform_access,query_round,query,query_language,result_count_observed,records_exported,export_file,deduplicated_count,status,notes
+SEARCH000001,2026-06-14,journal website / web seed,open web,R1 broad recall seed,浙江清凉峰 红外相机 鸟兽多样性 DOI PDF,zh,PENDING,1,manual seed; no RIS/BibTeX export yet,1,seed_completed,Seed record used to test the executable workflow. Full CNKI/WoS/Wanfang/VIP searches remain pending.

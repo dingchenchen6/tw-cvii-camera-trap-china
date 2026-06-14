@@ -1,0 +1,1 @@
+pair_id,study_id,focal_site_id,reference_site_id,reference_type,baseline_scenario,pairing_basis,land_use_contrast,management_contrast,metric_id_focal,metric_id_reference,effect_size_type,effect_size_value,zero_handling_rule,pair_confidence,extraction_page,verification_status

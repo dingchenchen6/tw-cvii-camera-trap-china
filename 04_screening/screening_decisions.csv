@@ -1,0 +1,2 @@
+source_id,screening_stage,decision,decision_date,reviewer,exclusion_reason,include_for,notes
+SRC000001,full_text,include_candidate,2026-06-14,Codex,NA,species_inventory; camera_days; RAI; disturbance; protected_area_case,Candidate only; high-impact fields require human verification.

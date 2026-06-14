@@ -36,7 +36,7 @@ window.TWCVII_CONTENT = {
         label: "Workflow",
         eyebrow: "标准工作流",
         title: "从文献检索到标准化数据库",
-        subtitle: "多库检索、Zotero 知识库、OneFind 本地检索、AI 候选抽取、人工核验、清洗标准化、数据库冻结和论文写作审计，形成可复现的数据生产线。",
+        subtitle: "多库检索、Zotero 知识库、OneFind 本地检索、AI 候选抽取、人工核验、清洗标准化、数据库冻结和论文写作审计，形成可复现的数据生产线；当前已落地 CSV 模板、验证脚本和第一篇候选抽取样例。",
         actionPrimary: "查看流程",
         actionSecondary: "查看质量门槛",
         stats: [
@@ -56,7 +56,8 @@ window.TWCVII_CONTENT = {
         sections: [
           { title: "检索策略", text: "中文和英文关键词必须多轮组合，覆盖红外相机、自动相机、相机陷阱、物种编目、相对多度指数、相机工作日、保护区、国家公园、人类干扰和类群关键词。" },
           { title: "附录优先", text: "红外相机文章的物种名录、独立记录、RAI、相机工作日和地点信息常在附录或补充 Excel 中，抽取前必须登记并检查所有附件。" },
-          { title: "审计链", text: "每个最终字段都保留 source_id、PDF/CAJ/附录文件、页码或表号、抽取批次、抽取工具、核验人和数据库版本。" }
+          { title: "审计链", text: "每个最终字段都保留 source_id、PDF/CAJ/附录文件、页码或表号、抽取批次、抽取工具、核验人和数据库版本。" },
+          { title: "可执行底座", text: "仓库已包含标准 CSV 表头、关键字段字典、AI 抽取 prompt、workflow 验证器、SQLite 构建脚本和清凉峰文章 candidate 级样例。" }
         ],
         qa: ["检索完整性", "Zotero 入库", "全文和附录", "结构化抽取", "清洗标准化", "分析前冻结"],
         sources: ["Zotero", "OneFind", "Web of Science", "CNKI", "GBIF camera-trap guide"]
@@ -69,9 +70,9 @@ window.TWCVII_CONTENT = {
         actionPrimary: "查看表结构",
         actionSecondary: "查看分析视图",
         stats: [
-          { value: "20+", label: "核心表", detail: "从来源、研究、地点、相机布设到证据状态和指数输出" },
+          { value: "26", label: "核心表", detail: "从来源、研究、地点、相机布设到证据状态和指数输出" },
           { value: "4", label: "字段等级", detail: "Mandatory、High priority、Optional、Derived" },
-          { value: "5", label: "缺失码", detail: "NR、NA、UNK、PENDING、EXTRACTED_UNVERIFIED" }
+          { value: "54", label: "种子物种记录", detail: "清凉峰样例已进入 candidate 数据库，等待人工核验" }
         ],
         diagramTitle: "关系型数据库层级",
         schemaGroups: [
@@ -154,7 +155,7 @@ window.TWCVII_CONTENT = {
         label: "Workflow",
         eyebrow: "Standard workflow",
         title: "From literature search to standardized database",
-        subtitle: "Multi-database search, Zotero knowledge base, OneFind retrieval, AI-assisted candidate extraction, human verification, cleaning, database freeze, and manuscript audit.",
+        subtitle: "Multi-database search, Zotero knowledge base, OneFind retrieval, AI-assisted candidate extraction, human verification, cleaning, database freeze, and manuscript audit. CSV templates, validation scripts, and the first candidate extraction seed are now implemented.",
         actionPrimary: "View pipeline",
         actionSecondary: "View QA gates",
         stats: [
@@ -174,7 +175,8 @@ window.TWCVII_CONTENT = {
         sections: [
           { title: "Search strategy", text: "Chinese and English keywords must cover camera traps, species inventories, relative abundance indices, camera-days, protected areas, national parks, human disturbance, and target taxa." },
           { title: "Appendix-first extraction", text: "Species lists, independent events, RAI, camera-days, and locality details are often in appendices or supplementary Excel files, so all attachments must be registered and inspected." },
-          { title: "Audit chain", text: "Every final field keeps source_id, PDF/CAJ/appendix file, page or table number, extraction batch, extraction tool, verifier, and database version." }
+          { title: "Audit chain", text: "Every final field keeps source_id, PDF/CAJ/appendix file, page or table number, extraction batch, extraction tool, verifier, and database version." },
+          { title: "Executable base", text: "The repository now includes standardized CSV headers, a critical field dictionary, AI extraction prompt, workflow validator, SQLite builder, and a Qingliangfeng candidate seed." }
         ],
         qa: ["Search completeness", "Zotero integrity", "Full text and appendix", "Structured extraction", "Standardization", "Analysis freeze"],
         sources: ["Zotero", "OneFind", "Web of Science", "CNKI", "GBIF camera-trap guide"]
@@ -187,9 +189,9 @@ window.TWCVII_CONTENT = {
         actionPrimary: "View schema",
         actionSecondary: "View analysis views",
         stats: [
-          { value: "20+", label: "Core tables", detail: "From sources, studies, sites, and deployments to evidence states and derived indices" },
+          { value: "26", label: "Core tables", detail: "From sources, studies, sites, and deployments to evidence states and derived indices" },
           { value: "4", label: "Field tiers", detail: "Mandatory, high priority, optional, and derived fields" },
-          { value: "5", label: "Missing codes", detail: "NR, NA, UNK, PENDING, EXTRACTED_UNVERIFIED" }
+          { value: "54", label: "Seed species records", detail: "The Qingliangfeng case is loaded into the candidate database for human verification" }
         ],
         diagramTitle: "Relational database layers",
         schemaGroups: [
@@ -236,4 +238,3 @@ window.TWCVII_CONTENT = {
     }
   }
 };
-

@@ -1,0 +1,2 @@
+batch_id,date,input_file_id,source_id,extractor,tool_or_model,prompt_version,output_folder,status,notes
+BATCH000001,2026-06-14,FILE000001,SRC000001,Codex,pdftotext + manual visual check,seed_v0,08_database/templates,candidate_extracted,Values extracted from PDF text and rendered pages; not human-verified.

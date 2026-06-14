@@ -1,0 +1,6 @@
+disturbance_id,source_id,study_id,site_id,disturbance_type_original,disturbance_type_standard,independent_records,valid_photos,rai_per_100_camera_days,temporal_overlap_species,extraction_page,verification_status
+DIS000001,SRC000001,STU000001,SITE000001,牛 Bos taurus,livestock_cattle,37,37,0.12,,PDF p.7; Table 2,candidate
+DIS000002,SRC000001,STU000001,SITE000001,羊 Capra hircus,livestock_goat,12,12,0.04,,PDF p.7; Table 2,candidate
+DIS000003,SRC000001,STU000001,SITE000001,猫 Felis catus,domestic_cat,3,3,0.01,,PDF p.7; Table 2,candidate
+DIS000004,SRC000001,STU000001,SITE000001,狗 Canis lupus familiaris,domestic_dog,13,13,0.04,,PDF p.7; Table 2,candidate
+DIS000005,SRC000001,STU000001,SITE000001,人 Home species,human_activity,36,36,0.12,,PDF p.7; Table 2,candidate

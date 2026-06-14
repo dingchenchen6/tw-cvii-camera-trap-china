@@ -1,0 +1,2 @@
+audit_id,source_id,file_id,extraction_batch,extractor,extraction_date,pages_checked,tables_checked,figures_checked,appendix_checked,supplement_checked,high_impact_fields_verified,unresolved_fields,confidence,verifier,verification_date
+AUD000001,SRC000001,FILE000001,BATCH000001,Codex,2026-06-14,1-10 text; rendered pages 2-4,Table 1; Table 2 candidate,Figure 1 rendered,no,no,no,Appendix 1; exact station coordinates; Zotero item key; external taxonomy validation,medium,PENDING,PENDING

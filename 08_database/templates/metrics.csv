@@ -1,0 +1,4 @@
+metric_id,source_id,study_id,site_id,species_id,metric_name_original,metric_name_standard,metric_value_original,metric_unit_original,metric_value_standard,metric_unit_standard,denominator,formula_reported,uncertainty,extraction_page,verification_status
+MET000001,SRC000001,STU000001,SITE000001,,相机工作日,camera_days,30993,d,30993,camera_days,,,,PDF p.4; Table 1,candidate
+MET000002,SRC000001,STU000001,SITE000001,,独立有效照片数,independent_valid_photos,18363,photos,18363,records,,,,PDF p.4; Table 1,candidate
+MET000003,SRC000001,STU000001,SITE000001,,相对多度指数公式,rai_formula,RAI = 独立有效照片数 / 所有相机工作日 * 100,formula,NA,formula,all camera-days,RAI = independent valid photos / all camera-days * 100,,PDF p.4; section 1.2.3,candidate
