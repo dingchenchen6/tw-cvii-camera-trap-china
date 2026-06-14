@@ -71,14 +71,20 @@ site_adequate <- adeq %>%
 # 对每个被探测到的物种生成 evidence_state:
 #   contemporary_detected=yes → confirmed_persistence
 #   (silent_range 需 historical_expectation，种子阶段无历史预期 → 暂只标 detected)
+# 每个 species×site 取一条(汇总多条 measurement)
 det <- dbGetQuery(con,
-  "SELECT m.species_id, m.site_id, m.measurement_value_standard AS recs
-   FROM species_site_measurement m
-   WHERE m.diversity_metric_type = 'independent_records'")
+  "SELECT species_id, site_id,
+          MAX(measurement_value_standard) AS recs
+   FROM species_site_measurement
+   WHERE diversity_metric_type = 'independent_records'
+   GROUP BY species_id, site_id")
 
 rai <- dbGetQuery(con,
-  "SELECT species_id, site_id, measurement_value_standard AS rai
-   FROM species_site_measurement WHERE diversity_metric_type='RAI'")
+  "SELECT species_id, site_id,
+          MAX(measurement_value_standard) AS rai
+   FROM species_site_measurement
+   WHERE diversity_metric_type = 'RAI'
+   GROUP BY species_id, site_id")
 ev_rows <- det %>%
   left_join(site_adequate, by = "site_id") %>%
   left_join(rai, by = c("species_id","site_id")) %>%

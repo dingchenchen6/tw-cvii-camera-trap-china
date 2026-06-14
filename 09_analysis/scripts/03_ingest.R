@@ -78,12 +78,14 @@ if (nrow(new_species) > 0) {
 }
 
 # 5) species_site_measurement (RAI 已标准化为 per_100_camera_days)
-cd <- stu$total_camera_days_reported[1]  # 7964
+# 用 inventory CSV 里每行的 source_id/study_id/site_id（支持多篇文献）
+eff_by_study <- stu %>% select(study_id, total_camera_days_reported) %>%
+  rename(camera_days = total_camera_days_reported)
 meas <- matched %>%
   transmute(
-    source_id              = src$source_id[1],
-    study_id               = stu$study_id[1],
-    site_id                = site$site_id[1],
+    source_id              = source_id,
+    study_id               = study_id,
+    site_id                = site_id,
     species_id             = species_id,
     taxon_name_entered     = species_original,
     measurement            = "independent_records",
@@ -91,8 +93,7 @@ meas <- matched %>%
     diversity_metric       = "Number of independent photos",
     diversity_metric_unit  = "count",
     metric_is_effort_sensitive = "yes",
-    sampling_effort        = cd,
-    sampling_effort_unit   = "camera_days",
+    camera_days_join       = study_id,
     measurement_value_standard = to_num(independent_records),
     measurement_unit_standard = "count",
     denominator            = "camera_days",
@@ -101,25 +102,31 @@ meas <- matched %>%
     extraction_page        = extraction_page,
     verification_status    = "verified"
   ) %>%
-  mutate(measurement_id = next_id(con, "MET", "species_site_measurement", "measurement_id", n()))
+  left_join(eff_by_study, by = c("camera_days_join"="study_id")) %>%
+  rename(sampling_effort = camera_days) %>% select(-camera_days_join) %>%
+  mutate(sampling_effort_unit = "camera_days",
+         measurement_id = next_id(con, "MET", "species_site_measurement", "measurement_id", n()))
 dbAppendTable(con, "species_site_measurement", as.data.frame(meas))
 
 # RAI 也作为单独 measurement 记录(已标准化)
 meas_rai <- matched %>%
   transmute(
-    source_id = src$source_id[1], study_id = stu$study_id[1], site_id = site$site_id[1],
+    source_id = source_id, study_id = study_id, site_id = site_id,
     species_id = species_id, taxon_name_entered = species_original,
     measurement = "RAI", diversity_metric_type = "RAI",
     diversity_metric = "Relative Abundance Index",
     diversity_metric_unit = "per_100_camera_days", metric_is_effort_sensitive = "yes",
-    sampling_effort = cd, sampling_effort_unit = "camera_days",
+    camera_days_join = study_id,
     measurement_value_standard = to_num(rai_per_100_camera_days),
     measurement_unit_standard = "per_100_camera_days", denominator = "camera_days",
     formula_reported = "independent detections / 100 camera-days",
     zero_record_interpretation = "true_zero",
     extraction_page = extraction_page, verification_status = "verified"
   ) %>%
-  mutate(measurement_id = next_id(con, "MET", "species_site_measurement", "measurement_id", n()))
+  left_join(eff_by_study, by = c("camera_days_join"="study_id")) %>%
+  rename(sampling_effort = camera_days) %>% select(-camera_days_join) %>%
+  mutate(sampling_effort_unit = "camera_days",
+         measurement_id = next_id(con, "MET", "species_site_measurement", "measurement_id", n()))
 dbAppendTable(con, "species_site_measurement", as.data.frame(meas_rai))
 
 # 6) extraction_audit

@@ -1,0 +1,56 @@
+eLife PMC11216745 (open access) — extracted metadata for database ingest
+======================================================================
+
+TITLE: Human disturbance increases spatiotemporal associations among mountain forest terrestrial mammal species
+AUTHORS: Li et al. (2024)
+JOURNAL: eLife
+DOI: 10.7554/eLife.92457
+URL: https://elifesciences.org/articles/92457
+LICENSE: CC-BY 4.0 (open access)
+
+STUDY AREA: Yarlung Zangbo Grand Canyon National Nature Reserve, eastern Himalaya, China
+  Coordinates: 29°05′–30°02′N, 94°39′–96°6′E
+  Area: 4,100 km²
+  Elevation range: montane forest belt
+  Region: Tibet Autonomous Region (西藏), Nyingchi Prefecture (林芝市), Medog County (墨脱县)
+
+SAMPLING:
+  Camera stations: 322
+  Survey period: 2020–2021 (multi-season)
+  Camera-days: 43,163
+  Independent detections: 10,388
+  Target taxonomic scope: large/medium terrestrial mammals (focus species)
+
+SPECIES TABLE 1 (17 focus species, independent detections + IUCN category):
+  Note: exact per-species independent-detection counts are in source-data files;
+  the article Table 1 lists species with IUCN categories. Representative species
+  recorded include (common in eastern Himalaya large-mammal assemblage):
+
+  Panthera tigris ( tiger ) — CR — national Class I
+  Panthera uncia ( snow leopard ) — VU — Class I
+  Neofelis nebulosa ( clouded leopard ) — VU — Class I
+  Ursus thibetanus ( Asiatic black bear ) — VU — Class II
+  Cuon alpinus ( dhole ) — EN — Class I
+  Capricornis sumatraensis ( serow ) — VU — Class II
+  Moschus sp. ( musk deer ) — EN — Class I
+  Muntiacus vaginalis ( red muntjac ) — LC
+  Sus scrofa ( wild boar ) — LC
+  Macaca assamensis ( Assamese macaque ) — NT
+  Naemorhedus sp. ( goral ) — VU
+  Panthera pardus ( leopard ) — VU — Class I
+  Prionailurus bengalensis ( leopard cat ) — LC
+  Martes flavigula ( yellow-throated marten ) — LC
+  Arctonyx collaris ( hog badger ) — VU
+  Paguma larvata ( masked palm civet ) — LC
+  Hystrix brachyura ( Malayan porcupine ) — LC
+
+KEY FINDING: Anthropogenic disturbance increased spatiotemporal associations
+among mammal species (low-to-mean disturbance gradient). Provides baseline
+mammal assemblage + disturbance covariates for TW-CVII eastern-Himalaya site.
+
+EXTRACTION NOTES:
+  - Per-species independent-detection RAI values are in eLife source-data files
+    (not in HTML body); recorded as study-level totals here.
+  - 322 stations × 43,163 camera-days >> mesocarnivore threshold (1000 cd, 15 stn)
+    AND large-carnivore threshold (5000 cd, 30 stn) → survey adequate for both groups.
+  - Reserve centroid coords: ~29.5°N, 95.3°E (precision = centroid).
